@@ -1,0 +1,25 @@
+{
+  "actions": [
+    {
+      "name": "/actions/ControllerInput/in/RightTriggerAction",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/ControllerInput/in/LeftTriggerAction",
+      "type": "boolean"
+    }
+  ],
+  "action_sets": [
+    {
+      "name": "/actions/ControllerInput",
+      "usage": "leftright"
+    }
+  ],
+  "default_bindings": [
+    {
+      "binding_url" : "application_generated_unity_neookey_b1_exe_binding_oculus_touch.json",
+      "controller_type" : "oculus_touch"
+    }
+  ],
+  "localization": []
+}
