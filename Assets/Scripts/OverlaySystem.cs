@@ -76,7 +76,7 @@ public class OverlaySystem : MonoBehaviour
 
     public void OnOSCMessageReceived(Message message)
     {
-        if(message.address == "/avatar/parameters/Hello")
+        if(message.address == "/avatar/parameters/ShowVRCJPInputter")
         {
             if(!isOverlayVisible) ShowOverlay();
             else SetOverlayRenderTexture();

@@ -3,9 +3,11 @@
 ## 概要
 
 VRChatで日本語入力をサポートするアプリケーションです。
+アバターのExpressions Menuから開くことができ、
 テキストチャット、ウィンドウへのテキスト送信ができます。
 
-動作にはWindows、SteamVRが必須となります。
+動作にはWindows、SteamVR、VRChatのトラストランクNew User以上が必須となります。
+また同梱のunitypackageを使用する場合、Modular Avatarの導入が必要です。
 
 ## 使い方
 
