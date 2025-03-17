@@ -142,6 +142,32 @@ public class TextManagementSystem : MonoBehaviour
         }
     }
 
+    public void OnClickParseButton()
+    {
+        if(writingText != "")
+        {
+            string oldText = writingText;
+            if(TextConversionUtil.smallTextDictionary.TryGetValue(oldText[oldText.Length-1], out var smallText))
+            {
+                writingText = oldText.Substring(0, oldText.Length-1) + smallText;
+            }
+            else if(TextConversionUtil.dakutenTextDictionary.TryGetValue(oldText[oldText.Length-1], out var dakutenText))
+            {
+                writingText = oldText.Substring(0, oldText.Length-1) + dakutenText;
+            }
+            else if(TextConversionUtil.handakutenTextDictionary.TryGetValue(oldText[oldText.Length-1], out var handakutenText))
+            {
+                writingText = oldText.Substring(0, oldText.Length-1) + handakutenText;
+            }
+            else
+            {
+                ParseDakutenText();
+                return;
+            }
+            ChangeInputFieldText(0);
+        }
+    }
+
     private void ChangeInputFieldText(int candidateIndex)
     {
         var candidateText = writingText.Substring(0, candidateIndex);

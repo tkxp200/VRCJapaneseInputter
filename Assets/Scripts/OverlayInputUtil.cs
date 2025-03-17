@@ -26,11 +26,43 @@ namespace OverlayInputUtil
             {'ツ', "ッ"},
             {'ヤ', "ャ"},
             {'ユ', "ュ"},
-            {'ヨ', "ョ"}
+            {'ヨ', "ョ"},
+            {'A', "a"},
+            {'B', "b"},
+            {'C', "c"},
+            {'D', "d"},
+            {'E', "e"},
+            {'F', "f"},
+            {'G', "g"},
+            {'H', "h"},
+            {'I', "i"},
+            {'J', "j"},
+            {'K', "k"},
+            {'L', "l"},
+            {'M', "m"},
+            {'N', "n"},
+            {'O', "o"},
+            {'P', "p"},
+            {'Q', "q"},
+            {'R', "r"},
+            {'S', "s"},
+            {'T', "t"},
+            {'U', "u"},
+            {'V', "v"},
+            {'W', "w"},
+            {'X', "x"},
+            {'Y', "y"},
+            {'Z', "z"}
+
         };
 
         public static Dictionary<char, string> dakutenTextDictionary = new Dictionary<char, string>()
         {
+            {'ぁ', "あ゛"},
+            {'ぃ', "い゛"},
+            {'ぅ', "う゛"},
+            {'ぇ', "え゛"},
+            {'ぉ', "お゛"},
             {'か', "が"},
             {'き', "ぎ"},
             {'く', "ぐ"},
@@ -44,6 +76,8 @@ namespace OverlayInputUtil
             {'た', "だ"},
             {'ち', "ぢ"},
             {'つ', "づ"},
+            {'っ', "づ"},
+            {'づ', "っ゛"},
             {'て', "で"},
             {'と', "ど"},
             {'は', "ば"},
@@ -51,6 +85,9 @@ namespace OverlayInputUtil
             {'ふ', "ぶ"},
             {'へ', "べ"},
             {'ほ', "ぼ"},
+            {'ゃ', "や゛"},
+            {'ゅ', "ゆ゛"},
+            {'ょ', "よ゛"},
             {'カ', "ガ"},
             {'キ', "ギ"},
             {'ク', "グ"},
@@ -80,11 +117,21 @@ namespace OverlayInputUtil
             {'ふ', "ぷ"},
             {'へ', "ぺ"},
             {'ほ', "ぽ"},
+            {'ば', "ぱ"},
+            {'び', "ぴ"},
+            {'ぶ', "ぷ"},
+            {'べ', "ぺ"},
+            {'ぼ', "ぽ"},
             {'ハ', "パ"},
             {'ヒ', "ピ"},
             {'フ', "プ"},
             {'ヘ', "ペ"},
-            {'ホ', "ポ"}
+            {'ホ', "ポ"},
+            {'バ', "パ"},
+            {'ビ', "ピ"},
+            {'ブ', "プ"},
+            {'ベ', "ペ"},
+            {'ボ', "ポ"}
         };
 
         public static Dictionary<char, string> AlphabetConvertDictionary = new Dictionary<char, string>()
@@ -166,7 +213,7 @@ namespace OverlayInputUtil
             { SmartPhoneKeyType.M, new List<string>       { "ま", "み", "む", "め", "も" } },
             { SmartPhoneKeyType.Y, new List<string>       { "や", "(", "ゆ",  ")", "よ" } },
             { SmartPhoneKeyType.R, new List<string>       { "ら", "り", "る", "れ", "ろ" } },
-            { SmartPhoneKeyType.DAKUTEN, new List<string> { "゛", "小", "ー", "゜" } },
+            { SmartPhoneKeyType.DAKUTEN, new List<string> { "小", "゛", "ー", "゜" } },
             { SmartPhoneKeyType.W, new List<string>       { "わ", "を", "ん", "～" } },
             { SmartPhoneKeyType.SYMBOL, new List<string>  { "、", "。", "？", "！" } }
         };
