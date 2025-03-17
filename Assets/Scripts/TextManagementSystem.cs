@@ -41,7 +41,7 @@ public class TextManagementSystem : MonoBehaviour
         ChangeInputFieldText(0);
     }
 
-    public void OnClickDeleteButton()
+    public void DeleteText()
     {
         if(writingText != "")
         {
@@ -58,7 +58,7 @@ public class TextManagementSystem : MonoBehaviour
         buttonUISystem.SetTransLiterateButtonVisible();
     }
 
-    public void OnClickAllDeleteButton()
+    public void AllDeleteText()
     {
         InitText();
         buttonUISystem.SetTransLiterateButtonVisible();
@@ -74,7 +74,7 @@ public class TextManagementSystem : MonoBehaviour
         PasteText(GUIUtility.systemCopyBuffer);
     }
 
-    public void OnClickEnterTextButton()
+    public void EnterText()
     {
         transLiteratedText += writingText;
         writingText = "";
@@ -179,7 +179,7 @@ public class TextManagementSystem : MonoBehaviour
         }
         else
         {
-            OnClickEnterTextButton();
+            EnterText();
         }
     }
 

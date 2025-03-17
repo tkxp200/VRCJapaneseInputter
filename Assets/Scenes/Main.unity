@@ -1632,7 +1632,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1637888398}
         m_TargetAssemblyTypeName: TextManagementSystem, Assembly-CSharp
-        m_MethodName: OnClickDeleteButton
+        m_MethodName: DeleteText
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9105,7 +9105,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1637888398}
         m_TargetAssemblyTypeName: TextManagementSystem, Assembly-CSharp
-        m_MethodName: OnClickEnterTextButton
+        m_MethodName: EnterText
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13201,7 +13201,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1637888398}
         m_TargetAssemblyTypeName: TextManagementSystem, Assembly-CSharp
-        m_MethodName: OnClickAllDeleteButton
+        m_MethodName: AllDeleteText
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
