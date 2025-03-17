@@ -73,7 +73,6 @@ public class SmartPhoneInputSystem : MonoBehaviour
                 {
                     case SmartPhoneInputUtil.ButtonPosition.CENTER :
                     {
-                        // textManagementSystem.ParseDakutenText();
                         textManagementSystem.OnClickParseButton();
                         break;
                     }
