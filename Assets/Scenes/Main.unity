@@ -1738,7 +1738,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "\rCopyright 2020 The Kiwi Maru Project Authors (https://github.com/Kiwi-KawagotoKajiru/Kiwi-Maru)\nThis
-    Font Software is licensed under the SIL Open Font License, Version 1.1.\r\n\u30E9\u30A4\u30BB\u30F3\u30B9\u5168\u6587\u306FLICENSES.md\u3092\u53C2\u7167\u3059\u308B\u3088\u3046\u304A\u9858\u3044\u3044\u305F\u3057\u307E\u3059\u3002"
+    Font Software is licensed under the SIL Open Font License, Version 1.1.\r\n\u30E9\u30A4\u30BB\u30F3\u30B9\u5168\u6587\u306FLICENSES\u3092\u53C2\u7167\u3059\u308B\u3088\u3046\u304A\u9858\u3044\u3044\u305F\u3057\u307E\u3059\u3002"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a41616d678ad2ec43abdeb14e1a828c9, type: 2}
   m_sharedMaterial: {fileID: -6983458972381495562, guid: a41616d678ad2ec43abdeb14e1a828c9, type: 2}
@@ -23446,7 +23446,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "https://github.com/ValveSoftware/steamvr_unity_plugin\nCopyright (c) Valve
-    Corporation\r\nAll rights reserved.\n\u30E9\u30A4\u30BB\u30F3\u30B9\u5168\u6587\u306FLICENSES.md\u3092\u53C2\u7167\u3059\u308B\u3088\u3046\u304A\u9858\u3044\u3044\u305F\u3057\u307E\u3059\u3002"
+    Corporation\r\nAll rights reserved.\n\u30E9\u30A4\u30BB\u30F3\u30B9\u5168\u6587\u306FLICENSES\u3092\u53C2\u7167\u3059\u308B\u3088\u3046\u304A\u9858\u3044\u3044\u305F\u3057\u307E\u3059\u3002"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a41616d678ad2ec43abdeb14e1a828c9, type: 2}
   m_sharedMaterial: {fileID: -6983458972381495562, guid: a41616d678ad2ec43abdeb14e1a828c9, type: 2}
