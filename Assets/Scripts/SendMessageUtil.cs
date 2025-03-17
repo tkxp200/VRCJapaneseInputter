@@ -18,7 +18,7 @@ namespace SendMessageUtil
         private const uint WM_KEYDOWN = 0x0100;
         private const uint VK_RETURN = 0x0D;
 
-        public static async Task? SendMessageToVRCWithWinAPI(string windowName, string strMessage)
+        public static void SendMessageToVRCWithWinAPI(string windowName, string strMessage)
         {
             IntPtr hWnd = FindWindow(null, windowName);
             if (hWnd == IntPtr.Zero)
@@ -29,7 +29,7 @@ namespace SendMessageUtil
             foreach(char c in strMessage)
             {
                 PostMessageW(hWnd, WM_CHAR, (IntPtr)c, IntPtr.Zero);
-                await Task.Delay(10);
+                // await Task.Delay(10);
             }
         }
     }

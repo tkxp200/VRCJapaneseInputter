@@ -14,21 +14,15 @@ public class SendMessageSystem : MonoBehaviour
     private bool isFinishSend = true;
     string windowName = "VRChat";
 
-    // void Start()
-    // {
-    //     SendMessageToVRC.ChangeWindowName(windowName);
-    // }
-
     public void SendMessage()
     {
         if(isFinishSend)
         {
             isFinishSend = false;
-            Task _;
             if(mainSystem.GetSendTarget() == MainSystemUtil.SendTarget.Chat)
                 client.Send("/chatbox/input", textManegamentSystem.GetCurrentText(), true);
             else
-                _ = SendMessageToVRC.SendMessageToVRCWithWinAPI(windowName, textManegamentSystem.GetCurrentText());
+                SendMessageToVRC.SendMessageToVRCWithWinAPI(windowName, textManegamentSystem.GetCurrentText());
             textManegamentSystem.InitText();
             isFinishSend = true;
         }
