@@ -3,15 +3,14 @@
 ## 概要
 
 VRChatで日本語入力をサポートするアプリケーションです。
-アバターのExpressions Menuから開くことができ、
 テキストチャット、ウィンドウへのテキスト送信ができます。
 
-動作にはWindows、SteamVR、VRChatのトラストランクNew User以上が必須となります。
+動作にはWindows、SteamVRが必須となります。
 また同梱のunitypackageを使用する場合、Modular Avatarの導入が必要です。
 
 ## 使い方
 
-使い方に関してはWikiをご覧ください。
+使い方に関しては[Wiki](https://github.com/tkxp200/VRCJapaneseInputter/wiki)をご覧ください。
 
 特にVRChatのウィンドウにテキストを送信する際は注意が必要です。
 
@@ -25,6 +24,6 @@ VRChatで日本語入力をサポートするアプリケーションです。
 
 ## その他
 
-バグや不具合等ございましたらIssueを立ててもらうか、[Booth](後でリンク追加する)のメッセージにてお願いいたします。
+バグや不具合等ございましたらIssueを立ててもらうか、[Booth](https://booth.pm/ja/items/6706426)のメッセージにてお願いいたします。
 
 コード汚いけどゆるして...
