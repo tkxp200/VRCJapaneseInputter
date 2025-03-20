@@ -75,3 +75,5 @@ crashlytics-build.properties
 
 /[Aa]ssets/Font/*.asset
 /unityProject.vrmanifest
+/.vscode
+/.vsconfig
