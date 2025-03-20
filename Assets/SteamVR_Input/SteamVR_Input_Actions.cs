@@ -21,6 +21,10 @@ namespace Valve.VR
         
         private static SteamVR_Action_Boolean p_controllerInput_LeftTriggerAction;
         
+        private static SteamVR_Action_Boolean p_controllerInput_ShowOverlayButton;
+        
+        private static SteamVR_Action_Vector2 p_controllerInput_ShowOverlayStick;
+        
         public static SteamVR_Action_Boolean controllerInput_RightTriggerAction
         {
             get
@@ -37,33 +41,59 @@ namespace Valve.VR
             }
         }
         
+        public static SteamVR_Action_Boolean controllerInput_ShowOverlayButton
+        {
+            get
+            {
+                return SteamVR_Actions.p_controllerInput_ShowOverlayButton.GetCopy<SteamVR_Action_Boolean>();
+            }
+        }
+        
+        public static SteamVR_Action_Vector2 controllerInput_ShowOverlayStick
+        {
+            get
+            {
+                return SteamVR_Actions.p_controllerInput_ShowOverlayStick.GetCopy<SteamVR_Action_Vector2>();
+            }
+        }
+        
         private static void InitializeActionArrays()
         {
             Valve.VR.SteamVR_Input.actions = new Valve.VR.SteamVR_Action[] {
                     SteamVR_Actions.controllerInput_RightTriggerAction,
-                    SteamVR_Actions.controllerInput_LeftTriggerAction};
+                    SteamVR_Actions.controllerInput_LeftTriggerAction,
+                    SteamVR_Actions.controllerInput_ShowOverlayButton,
+                    SteamVR_Actions.controllerInput_ShowOverlayStick};
             Valve.VR.SteamVR_Input.actionsIn = new Valve.VR.ISteamVR_Action_In[] {
                     SteamVR_Actions.controllerInput_RightTriggerAction,
-                    SteamVR_Actions.controllerInput_LeftTriggerAction};
+                    SteamVR_Actions.controllerInput_LeftTriggerAction,
+                    SteamVR_Actions.controllerInput_ShowOverlayButton,
+                    SteamVR_Actions.controllerInput_ShowOverlayStick};
             Valve.VR.SteamVR_Input.actionsOut = new Valve.VR.ISteamVR_Action_Out[0];
             Valve.VR.SteamVR_Input.actionsVibration = new Valve.VR.SteamVR_Action_Vibration[0];
             Valve.VR.SteamVR_Input.actionsPose = new Valve.VR.SteamVR_Action_Pose[0];
             Valve.VR.SteamVR_Input.actionsBoolean = new Valve.VR.SteamVR_Action_Boolean[] {
                     SteamVR_Actions.controllerInput_RightTriggerAction,
-                    SteamVR_Actions.controllerInput_LeftTriggerAction};
+                    SteamVR_Actions.controllerInput_LeftTriggerAction,
+                    SteamVR_Actions.controllerInput_ShowOverlayButton};
             Valve.VR.SteamVR_Input.actionsSingle = new Valve.VR.SteamVR_Action_Single[0];
-            Valve.VR.SteamVR_Input.actionsVector2 = new Valve.VR.SteamVR_Action_Vector2[0];
+            Valve.VR.SteamVR_Input.actionsVector2 = new Valve.VR.SteamVR_Action_Vector2[] {
+                    SteamVR_Actions.controllerInput_ShowOverlayStick};
             Valve.VR.SteamVR_Input.actionsVector3 = new Valve.VR.SteamVR_Action_Vector3[0];
             Valve.VR.SteamVR_Input.actionsSkeleton = new Valve.VR.SteamVR_Action_Skeleton[0];
             Valve.VR.SteamVR_Input.actionsNonPoseNonSkeletonIn = new Valve.VR.ISteamVR_Action_In[] {
                     SteamVR_Actions.controllerInput_RightTriggerAction,
-                    SteamVR_Actions.controllerInput_LeftTriggerAction};
+                    SteamVR_Actions.controllerInput_LeftTriggerAction,
+                    SteamVR_Actions.controllerInput_ShowOverlayButton,
+                    SteamVR_Actions.controllerInput_ShowOverlayStick};
         }
         
         private static void PreInitActions()
         {
             SteamVR_Actions.p_controllerInput_RightTriggerAction = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/ControllerInput/in/RightTriggerAction")));
             SteamVR_Actions.p_controllerInput_LeftTriggerAction = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/ControllerInput/in/LeftTriggerAction")));
+            SteamVR_Actions.p_controllerInput_ShowOverlayButton = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/ControllerInput/in/ShowOverlayButton")));
+            SteamVR_Actions.p_controllerInput_ShowOverlayStick = ((SteamVR_Action_Vector2)(SteamVR_Action.Create<SteamVR_Action_Vector2>("/actions/ControllerInput/in/ShowOverlayStick")));
         }
     }
 }

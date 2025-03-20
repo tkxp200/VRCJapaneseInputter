@@ -32,5 +32,21 @@ namespace Valve.VR
                 return SteamVR_Actions.controllerInput_LeftTriggerAction;
             }
         }
+        
+        public virtual SteamVR_Action_Boolean ShowOverlayButton
+        {
+            get
+            {
+                return SteamVR_Actions.controllerInput_ShowOverlayButton;
+            }
+        }
+        
+        public virtual SteamVR_Action_Vector2 ShowOverlayStick
+        {
+            get
+            {
+                return SteamVR_Actions.controllerInput_ShowOverlayStick;
+            }
+        }
     }
 }

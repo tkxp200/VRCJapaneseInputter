@@ -20,8 +20,11 @@ public class ActionSystem : MonoBehaviour
     private Vector2? currentHitPosition = null;
     private ulong rightTriggerActionHandle = 0;
     private ulong leftTriggerActionHandle = 0;
+    private ulong showOverlayButtonHandle = 0;
+    private ulong showOverlayStickHandle = 0;
     private ulong actionSetHandle = 0;
     private ulong overlayHandle;
+    private bool isStickReseted = true;
 
     void Start()
     {
@@ -30,6 +33,8 @@ public class ActionSystem : MonoBehaviour
         actionSetHandle = ActionUtil.GetActionSetHandlePath("/actions/ControllerInput");
         rightTriggerActionHandle = ActionUtil.GetActionHandlePath($"/actions/ControllerInput/in/RightTriggerAction");
         leftTriggerActionHandle = ActionUtil.GetActionHandlePath($"/actions/ControllerInput/in/LeftTriggerAction");
+        showOverlayButtonHandle = ActionUtil.GetActionHandlePath($"/actions/ControllerInput/in/ShowOverlayButton");
+        showOverlayStickHandle = ActionUtil.GetActionHandlePath($"/actions/ControllerInput/in/ShowOverlayStick");
         overlayHandle = overlaySystem.GetOverlayHandle();
     }
 
@@ -38,8 +43,8 @@ public class ActionSystem : MonoBehaviour
         if(overlaySystem.GetOverlayVisible())
         {
             UpdateHitPosition();
-            UpdateAction();
         }
+        UpdateAction();
     }
 
     void UpdateHitPosition()
@@ -64,21 +69,41 @@ public class ActionSystem : MonoBehaviour
 
     void UpdateAction()
     {
-        if(currentHitPosition != null)
+        var actionSetList = new VRActiveActionSet_t[]
         {
-            var actionSetList = new VRActiveActionSet_t[]
+            new VRActiveActionSet_t()
             {
-                new VRActiveActionSet_t()
-                {
-                    ulActionSet = actionSetHandle,
-                    ulRestrictedToDevice = OpenVR.k_ulInvalidInputValueHandle,
-                }
-            };
+                ulActionSet = actionSetHandle,
+                ulRestrictedToDevice = OpenVR.k_ulInvalidInputValueHandle,
+            }
+        };
 
-            InputDigitalActionData_t triggerResult = default;
-            var activeActionSize = (uint)System.Runtime.InteropServices.Marshal.SizeOf(typeof(VRActiveActionSet_t));
-            var err = OpenVR.Input.UpdateActionState(actionSetList, activeActionSize);
-            ActionUtil.EVRInputErrThrowException(err, "アクションの更新に失敗しました");
+        InputDigitalActionData_t triggerResult = default;
+        var activeActionSize = (uint)System.Runtime.InteropServices.Marshal.SizeOf(typeof(VRActiveActionSet_t));
+        var err = OpenVR.Input.UpdateActionState(actionSetList, activeActionSize);
+        ActionUtil.EVRInputErrThrowException(err, "アクションの更新に失敗しました");
+
+        var showOverlayStickResult = ActionUtil.GetAnalogActionData(showOverlayStickHandle);
+        var showOverlayButtonResult = ActionUtil.GetDigitalActionData(showOverlayButtonHandle);
+
+        //スティックのy座標が-0.9以上の場合発動
+        if(showOverlayStickResult.bActive && isStickReseted && showOverlayStickResult.y < -0.9f)
+        {
+            isStickReseted = false;
+            overlaySystem.ShowOverlay();
+        }
+        else
+        {
+            isStickReseted = true;
+        }
+
+        if(showOverlayButtonResult.bChanged && showOverlayButtonResult.bState)
+        {
+            overlaySystem.ShowOverlay();
+        }
+
+        if(overlaySystem.GetOverlayVisible() && currentHitPosition != null)
+        {
             if(mainSystem.GetTrackHand() == ETrackedControllerRole.RightHand)
             {
                 triggerResult = ActionUtil.GetDigitalActionData(rightTriggerActionHandle);
