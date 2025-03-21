@@ -50,16 +50,23 @@ public class CandidateSystem : MonoBehaviour
         }
     }
 
-    void HitPositionMove(Vector2 hitPosition)
+    void HitPositionMove(Vector2? hitPosition)
     {
         if(isTriggerPressed && buttonPositionX > mainSystem.GetWindowSize().x)
         {
-            var hitPositionDx = hitPosition.x - currentHitPosition.x;
-            var currentCandidateParentPosition = candidateTransform.anchoredPosition;
-            var candidatePositionX = Mathf.Clamp(currentCandidateParentPosition.x + hitPositionDx,
-                mainSystem.GetWindowSize().x-buttonPositionX, defaultCandidateParentPosition.x);
-            candidateTransform.anchoredPosition = new Vector2(candidatePositionX, currentCandidateParentPosition.y);
-            currentHitPosition = hitPosition;
+            if(hitPosition != null)
+            {
+                var hitPositionDx = (float)hitPosition?.x - currentHitPosition.x;
+                var currentCandidateParentPosition = candidateTransform.anchoredPosition;
+                var candidatePositionX = Mathf.Clamp(currentCandidateParentPosition.x + hitPositionDx,
+                    mainSystem.GetWindowSize().x-buttonPositionX, defaultCandidateParentPosition.x);
+                candidateTransform.anchoredPosition = new Vector2(candidatePositionX, currentCandidateParentPosition.y);
+                currentHitPosition = (Vector2)hitPosition;
+            }
+            else
+            {
+                isTriggerPressed = false;
+            }
         }
     }
 

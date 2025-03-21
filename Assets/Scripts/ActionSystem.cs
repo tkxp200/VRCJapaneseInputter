@@ -11,7 +11,7 @@ public class ActionSystem : MonoBehaviour
 {
     public event Action<Vector2, GameObject> OnTriggerDown;
     public event Action<Vector2, GameObject> OnTriggerUp;
-    public event Action<Vector2> OnHitPositionMove;
+    public event Action<Vector2?> OnHitPositionMove;
     public event Action<Vector2?> OnCursorPositionMove;
     [SerializeField] GraphicRaycaster graphicRaycaster;
     [SerializeField] EventSystem eventSystem;
@@ -63,6 +63,7 @@ public class ActionSystem : MonoBehaviour
         else
         {
             currentHitPosition = null;
+            OnHitPositionMove?.Invoke(null);
             OnCursorPositionMove?.Invoke(null);
         }
     }

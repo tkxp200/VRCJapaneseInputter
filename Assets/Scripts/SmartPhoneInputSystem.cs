@@ -29,29 +29,37 @@ public class SmartPhoneInputSystem : MonoBehaviour
         actionSystem.OnHitPositionMove += HitPositionMove;
     }
 
-    void HitPositionMove(Vector2 hitPosition)
+    void HitPositionMove(Vector2? hitPosition)
     {
         if(isMainButtonPressed)
         {
-            var hitPositionDiff = hitPosition - triggerDownPosition;
-            var x = Mathf.Abs(hitPositionDiff.x);
-            var y = Mathf.Abs(hitPositionDiff.y);
-            if(x >= y && x >= mainSystem.GetDragThreshold())
+            if(hitPosition != null)
             {
-                if(hitPositionDiff.x < 0) currentButtonPosition = SmartPhoneInputUtil.ButtonPosition.LEFT;
-                else currentButtonPosition = SmartPhoneInputUtil.ButtonPosition.RIGHT;
-                ShowSubKeyIndex(currentButtonPosition);
-            }
-            else if(y > x && y >= mainSystem.GetDragThreshold())
-            {
-                if(hitPositionDiff.y > 0) currentButtonPosition = SmartPhoneInputUtil.ButtonPosition.TOP;
-                else if(currentSubKeyCount == subButton.Count) currentButtonPosition = SmartPhoneInputUtil.ButtonPosition.BOTTOM;
-                ShowSubKeyIndex(currentButtonPosition);
+                var hitPositionDiff = (Vector2)hitPosition - triggerDownPosition;
+                var x = Mathf.Abs(hitPositionDiff.x);
+                var y = Mathf.Abs(hitPositionDiff.y);
+                if(x >= y && x >= mainSystem.GetDragThreshold())
+                {
+                    if(hitPositionDiff.x < 0) currentButtonPosition = SmartPhoneInputUtil.ButtonPosition.LEFT;
+                    else currentButtonPosition = SmartPhoneInputUtil.ButtonPosition.RIGHT;
+                    ShowSubKeyIndex(currentButtonPosition);
+                }
+                else if(y > x && y >= mainSystem.GetDragThreshold())
+                {
+                    if(hitPositionDiff.y > 0) currentButtonPosition = SmartPhoneInputUtil.ButtonPosition.TOP;
+                    else if(currentSubKeyCount == subButton.Count) currentButtonPosition = SmartPhoneInputUtil.ButtonPosition.BOTTOM;
+                    ShowSubKeyIndex(currentButtonPosition);
+                }
+                else
+                {
+                    currentButtonPosition = SmartPhoneInputUtil.ButtonPosition.CENTER;
+                    ShowAllSubkey();
+                }
             }
             else
             {
-                currentButtonPosition = SmartPhoneInputUtil.ButtonPosition.CENTER;
-                ShowAllSubkey();
+                isMainButtonPressed = false;
+                HideAllSubkey();
             }
         }
     }
