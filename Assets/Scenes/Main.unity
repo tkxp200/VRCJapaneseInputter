@@ -11645,7 +11645,7 @@ GameObject:
   - component: {fileID: 823462594}
   - component: {fileID: 823462593}
   m_Layer: 5
-  m_Name: Doll
+  m_Name: yen
   m_TagString: SmartPhoneButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11724,7 +11724,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: $
+          m_StringArgument: "\uFFE5"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &823462594
@@ -21811,7 +21811,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: $
+  m_text: "\uFFE5"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a41616d678ad2ec43abdeb14e1a828c9, type: 2}
   m_sharedMaterial: {fileID: -6983458972381495562, guid: a41616d678ad2ec43abdeb14e1a828c9, type: 2}
