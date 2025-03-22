@@ -63,6 +63,7 @@ public class OverlaySystem : MonoBehaviour
             OverlayUtil.ShowOverlay(overlayHandle);
             isOverlayVisible = true;
         }
+        else SetOverlayRenderTexture();
     }
 
     public void HideOverlay()
@@ -76,10 +77,11 @@ public class OverlaySystem : MonoBehaviour
 
     public void OnOSCMessageReceived(Message message)
     {
-        if(message.address == "/avatar/parameters/ShowVRCJPInputter")
+        if(message.address == "/avatar/parameters/ShowVRCJPInputter" && (bool)message.values[0])
         {
-            if(!isOverlayVisible) ShowOverlay();
-            else SetOverlayRenderTexture();
+            // if(!isOverlayVisible) ShowOverlay();
+            // else SetOverlayRenderTexture();
+            ShowOverlay();
         }
     }
 
