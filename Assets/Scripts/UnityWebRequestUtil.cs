@@ -2,7 +2,6 @@ using System;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.Networking;
-using Newtonsoft.Json;
 using System.Threading.Tasks;
 
 namespace UnityWebRequestUtil
