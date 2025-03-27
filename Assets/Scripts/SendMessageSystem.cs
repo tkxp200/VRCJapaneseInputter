@@ -27,4 +27,9 @@ public class SendMessageSystem : MonoBehaviour
             isFinishSend = true;
         }
     }
+
+    public void SendChatTyping(bool isTyping)
+    {
+        client.Send("/chatbox/typing", isTyping && mainSystem.GetSendTarget() == MainSystemUtil.SendTarget.Chat);
+    }
 }

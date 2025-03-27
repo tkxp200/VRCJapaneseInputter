@@ -8,6 +8,7 @@ using TMPro;
 public class TextManagementSystem : MonoBehaviour
 {
     [SerializeField] CandidateSystem candidateSystem;
+    [SerializeField] SendMessageSystem sendMessageSystem;
     [SerializeField] ButtonUISystem buttonUISystem;
     [SerializeField] TMP_InputField inputField;
     private string transLiteratedText = "";
@@ -170,6 +171,8 @@ public class TextManagementSystem : MonoBehaviour
 
     private void ChangeInputFieldText(int candidateIndex)
     {
+        sendMessageSystem.SendChatTyping(writingText != "" || transLiteratedText != "");
+
         var candidateText = writingText.Substring(0, candidateIndex);
         var remainingText = writingText.Substring(candidateIndex);
         inputField.text = $"{transLiteratedText}<u><mark=#00baf340>{candidateText}</mark>{remainingText}</u>";
