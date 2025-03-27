@@ -45,9 +45,11 @@ public class OverlaySystem : MonoBehaviour
         Vector3 forward = hmdTransform.rot * Vector3.forward;
         Vector3 overlayPosition = controllerTransform.pos + forward * mainSystem.GetOverlayDistance();
         Quaternion rotation;
+        Vector3 direction = - controllerTransform.pos + overlayPosition;
+        direction.Normalize();
         if(mainSystem.GetTrackDevice() == MainSystemUtil.TrackDevice.HMD)
-            rotation = Quaternion.Euler(hmdTransform.rot.eulerAngles.x, hmdTransform.rot.eulerAngles.y, 0f);
-        else rotation = controllerTransform.rot * Quaternion.Euler(90f, 0f, 0f);
+            rotation = Quaternion.LookRotation(direction, hmdTransform.rot * Vector3.up);
+        else rotation = Quaternion.LookRotation(direction, Vector3.up);
         OverlayUtil.SetTransformAbsolute(overlayHandle, overlayPosition, rotation);
         ReloadOverlay();
     }

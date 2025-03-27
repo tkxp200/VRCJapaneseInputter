@@ -11,7 +11,7 @@ public class SettingSystem : MonoBehaviour
     private string trackHandKey = "TrackHand";
     private ETrackedControllerRole defaultTrackHand = ETrackedControllerRole.RightHand;
     private string trackDeviceKey = "TrackDevice";
-    private MainSystemUtil.TrackDevice defaultTrackDevice = MainSystemUtil.TrackDevice.HMD;
+    private MainSystemUtil.TrackDevice defaultTrackDevice = MainSystemUtil.TrackDevice.WORLD;
     private string overlaySizeKey = "OverlaySizex10";
     private int defaultOverlaySizex10 = 3;
     private string overlayDistanceKey = "OverlayDistancex100";

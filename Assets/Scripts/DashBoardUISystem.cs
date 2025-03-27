@@ -33,11 +33,11 @@ public class DashBoardUISystem : MonoBehaviour
 
     public void ChangeTrackDeviceUI(MainSystemUtil.TrackDevice trackDevice)
     {
-        if(trackDevice == MainSystemUtil.TrackDevice.HMD)
+        if(trackDevice == MainSystemUtil.TrackDevice.WORLD)
         {
             trackDeviceActiveGround.transform.localPosition = trackDeviceOptions[0].transform.localPosition;
         }
-        if(trackDevice == MainSystemUtil.TrackDevice.Controller)
+        if(trackDevice == MainSystemUtil.TrackDevice.HMD)
         {
             trackDeviceActiveGround.transform.localPosition = trackDeviceOptions[1].transform.localPosition;
         }

@@ -14,7 +14,7 @@ public class MainSystem : MonoBehaviour
     [SerializeField] SettingSystem settingSystem;
     public ETrackedControllerRole trackHand = ETrackedControllerRole.RightHand;
     private MainSystemUtil.InputTypes inputType = MainSystemUtil.InputTypes.Hiragana;
-    private MainSystemUtil.TrackDevice trackDevice = MainSystemUtil.TrackDevice.HMD;
+    private MainSystemUtil.TrackDevice trackDevice = MainSystemUtil.TrackDevice.WORLD;
     private MainSystemUtil.SendTarget sendTarget = MainSystemUtil.SendTarget.Chat;
     private int overlaySizex10;
     private int overlayDistancex100;

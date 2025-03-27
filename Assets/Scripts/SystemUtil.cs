@@ -22,8 +22,8 @@ namespace SystemUtil
 
         public enum TrackDevice
         {
-            HMD,
-            Controller
+            WORLD,
+            HMD
         };
     }
 }
