@@ -42,11 +42,13 @@ public class OverlaySystem : MonoBehaviour
     {
         var controllerTransform = OverlayUtil.GetControllerTransform(mainSystem.GetTrackHand());
         var hmdTransform = OverlayUtil.GetHmdTransform();
-        var diff = new Vector3(0f, 0f, mainSystem.GetOverlayDistance());
+        Vector3 forward = hmdTransform.rot * Vector3.forward;
+        Vector3 overlayPosition = controllerTransform.pos + forward * mainSystem.GetOverlayDistance();
         Quaternion rotation;
-        if(mainSystem.GetTrackDevice() == MainSystemUtil.TrackDevice.HMD) rotation = Quaternion.Euler(hmdTransform.rot.eulerAngles.x, hmdTransform.rot.eulerAngles.y, 0f);
+        if(mainSystem.GetTrackDevice() == MainSystemUtil.TrackDevice.HMD)
+            rotation = Quaternion.Euler(hmdTransform.rot.eulerAngles.x, hmdTransform.rot.eulerAngles.y, 0f);
         else rotation = controllerTransform.rot * Quaternion.Euler(90f, 0f, 0f);
-        OverlayUtil.SetTransformAbsolute(overlayHandle, controllerTransform.pos + diff, rotation);
+        OverlayUtil.SetTransformAbsolute(overlayHandle, overlayPosition, rotation);
         ReloadOverlay();
     }
 
