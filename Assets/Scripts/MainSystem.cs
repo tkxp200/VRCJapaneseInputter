@@ -19,6 +19,7 @@ public class MainSystem : MonoBehaviour
     private int overlaySizex10;
     private int overlayDistancex100;
     private int dragThreshold;
+    private bool isUseJoystick;
     private bool isUseTransLiterate;
 
     public float GetOverlaySize()
@@ -44,6 +45,11 @@ public class MainSystem : MonoBehaviour
     public int GetDragThreshold()
     {
         return dragThreshold;
+    }
+
+    public bool GetUseJoystick()
+    {
+        return isUseJoystick;
     }
 
     public bool GetUseTransLiterate()
@@ -184,6 +190,20 @@ public class MainSystem : MonoBehaviour
     {
         dragThreshold = setThreshold;
         dashBoardUISystem.ChangeDragThresholdUI(dragThreshold);
+        settingSystem.SaveSetting();
+    }
+
+    public void ChangeUseJoystick()
+    {
+        isUseJoystick = !isUseJoystick;
+        dashBoardUISystem.ChangeActiveJoystick(isUseJoystick);
+        settingSystem.SaveSetting();
+    }
+
+    public void SetUseJoystick(bool setUseJoystick)
+    {
+        isUseJoystick = setUseJoystick;
+        dashBoardUISystem.ChangeActiveJoystick(isUseJoystick);
         settingSystem.SaveSetting();
     }
 

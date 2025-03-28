@@ -88,7 +88,7 @@ public class ActionSystem : MonoBehaviour
         var showOverlayButtonResult = ActionUtil.GetDigitalActionData(showOverlayButtonHandle);
 
         //スティックのy座標が-0.9以上の場合発動
-        if(showOverlayStickResult.bActive && isStickReseted && showOverlayStickResult.y < -0.9f)
+        if(mainSystem.GetUseJoystick() && showOverlayStickResult.bActive && isStickReseted && showOverlayStickResult.y < -0.9f)
         {
             isStickReseted = false;
             overlaySystem.ShowOverlay();
@@ -98,7 +98,7 @@ public class ActionSystem : MonoBehaviour
             isStickReseted = true;
         }
 
-        if(showOverlayButtonResult.bChanged && showOverlayButtonResult.bState)
+        if(mainSystem.GetUseJoystick() && showOverlayButtonResult.bState)
         {
             overlaySystem.ShowOverlay();
         }
