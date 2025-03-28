@@ -12,6 +12,8 @@ public class ButtonUISystem : MonoBehaviour
     [SerializeField] GameObject alphabetButtonParent;
     [SerializeField] GameObject cursorButtonParent;
     [SerializeField] GameObject transLiterateButtonParent;
+    [SerializeField] GameObject enterButton;
+    [SerializeField] GameObject copyButton;
     [SerializeField] TextMeshProUGUI sendButtonText;
 
     public void ChangeSendButtonText(MainSystemUtil.SendTarget sendTarget)
@@ -71,4 +73,15 @@ public class ButtonUISystem : MonoBehaviour
         transLiterateButtonParent.SetActive(true);
     }
 
+    public void SetEnterButtonVisible()
+    {
+        copyButton.SetActive(false);
+        enterButton.SetActive(true);
+    }
+
+    public void SetCopyButtonVisible()
+    {
+        enterButton.SetActive(false);
+        copyButton.SetActive(true);
+    }
 }

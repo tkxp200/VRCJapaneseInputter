@@ -75,6 +75,12 @@ public class TextManagementSystem : MonoBehaviour
         PasteText(GUIUtility.systemCopyBuffer);
     }
 
+    public void OnClickCopyButton()
+    {
+        GUIUtility.systemCopyBuffer = GetCurrentText();
+        InitText();
+    }
+
     public void EnterText()
     {
         transLiteratedText += writingText;
@@ -182,6 +188,9 @@ public class TextManagementSystem : MonoBehaviour
             currentTransLiterateIndex = candidateIndex;
         }
         else candidateSystem.GenerateCandidate(writingText);
+
+        if(writingText == "" && transLiteratedText != "") buttonUISystem.SetCopyButtonVisible();
+        else buttonUISystem.SetEnterButtonVisible();
     }
 
     public void OnClickTransLiterateButton()
