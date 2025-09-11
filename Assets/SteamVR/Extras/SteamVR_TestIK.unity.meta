@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4b6669fb4e4df9c48926f02b694be9d1
+timeCreated: 1437433018
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Extras/SteamVR_TestIK.unity
+  uploadId: 638640

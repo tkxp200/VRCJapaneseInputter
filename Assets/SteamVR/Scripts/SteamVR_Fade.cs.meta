@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 2ad1e469d4e3e04489f9a36419f1a4f8
+timeCreated: 1544852187
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Scripts/SteamVR_Fade.cs
+  uploadId: 638640

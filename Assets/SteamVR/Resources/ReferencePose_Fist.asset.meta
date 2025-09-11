@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5923b268404ed1c46a82b541e44c52af
+timeCreated: 1547853659
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Resources/ReferencePose_Fist.asset
+  uploadId: 638640

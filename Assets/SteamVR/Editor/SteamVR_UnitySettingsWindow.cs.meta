@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: d2244eee8a3a4784fb40d1123ff69301
+timeCreated: 1438809573
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Editor/SteamVR_UnitySettingsWindow.cs
+  uploadId: 638640

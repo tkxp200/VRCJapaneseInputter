@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 67867a20919f7db45a2e7034fda1c28e
+timeCreated: 1433373945
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Editor/SteamVR_RenderModelEditor.cs
+  uploadId: 638640

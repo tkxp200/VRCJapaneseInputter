@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 99ee8d48ccf36264e9d9a72baa681249
+timeCreated: 1465950289
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Extras/SteamVR_TestTrackedCamera.mat
+  uploadId: 638640

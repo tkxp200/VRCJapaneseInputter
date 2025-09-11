@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4d7627d70abb4e247b7d958e6634b2f1
+timeCreated: 1537316570
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Samples/Squishy/Squishy.prefab
+  uploadId: 638640

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9b01d7c0e4dfa854eb5dfe2624e27c0f
+timeCreated: 1532015681
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Models/Materials/Abyss.mat
+  uploadId: 638640

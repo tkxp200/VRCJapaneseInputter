@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7c96990a8e2f1cc4ea46b9383d26bb7f
+timeCreated: 1534354539
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Samples/JoeJeff/platformer.physicMaterial
+  uploadId: 638640

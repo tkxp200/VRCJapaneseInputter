@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a1313a5fd0b97df4798c301e337a1eb8
+timeCreated: 1457269507
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Teleport/Materials/TeleportPlaySpace.mat
+  uploadId: 638640

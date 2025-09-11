@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 50cdd0e6236971841b9868ca3c32ac0b
+timeCreated: 1533933984
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Samples/JoeJeff/Materials/JoeJeff.mat
+  uploadId: 638640

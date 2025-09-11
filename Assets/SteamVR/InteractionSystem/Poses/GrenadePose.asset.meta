@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bd65db1a4d6b7894a8fccb2ebfda0fe2
+timeCreated: 1547838715
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Poses/GrenadePose.asset
+  uploadId: 638640

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 782e025f2916bcc4eb141c1fb67c13f6
+timeCreated: 1534868525
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Samples/JoeJeff/Materials/JJHat.mat
+  uploadId: 638640

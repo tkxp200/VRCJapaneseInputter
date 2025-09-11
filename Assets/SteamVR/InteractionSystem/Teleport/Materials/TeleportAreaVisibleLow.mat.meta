@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5f0129f65bc822d429cfad1b63fb9db4
+timeCreated: 1457053648
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Teleport/Materials/TeleportAreaVisibleLow.mat
+  uploadId: 638640

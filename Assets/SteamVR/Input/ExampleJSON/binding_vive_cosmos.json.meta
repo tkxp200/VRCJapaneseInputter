@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: da08bf5ecfe08d54abffcb6b22e75322
+timeCreated: 1568830083
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Input/ExampleJSON/binding_vive_cosmos.json
+  uploadId: 638640

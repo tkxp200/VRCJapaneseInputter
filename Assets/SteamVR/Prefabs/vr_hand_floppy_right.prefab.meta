@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 48a64ca49a112494fa864087de12b75c
+timeCreated: 1531875077
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Prefabs/vr_hand_floppy_right.prefab
+  uploadId: 638640

@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 29abf75f7265ccb45b799eac4ab0ca94
+timeCreated: 1487968203
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Editor/SteamVR_Preferences.cs
+  uploadId: 638640

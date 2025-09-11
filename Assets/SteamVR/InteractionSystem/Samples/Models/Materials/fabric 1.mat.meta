@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: be0b1dee5fea4ea40909e542a9a5fb16
+timeCreated: 1532713948
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Samples/Models/Materials/fabric 1.mat
+  uploadId: 638640

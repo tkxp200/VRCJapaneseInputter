@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 11b050e661ec0cf48a289a7266451e91
+timeCreated: 1452301140
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Hints/Materials/ControllerButtonHints.mat
+  uploadId: 638640

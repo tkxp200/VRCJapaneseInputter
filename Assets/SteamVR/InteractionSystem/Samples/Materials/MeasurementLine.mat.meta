@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7541a5776f7b9844c9a765c45f6e0940
+timeCreated: 1528843984
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Samples/Materials/MeasurementLine.mat
+  uploadId: 638640

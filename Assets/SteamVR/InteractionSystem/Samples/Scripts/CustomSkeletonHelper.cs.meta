@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 294fb0b20d456c749966ea34ca82355a
+timeCreated: 1531864824
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Samples/Scripts/CustomSkeletonHelper.cs
+  uploadId: 638640

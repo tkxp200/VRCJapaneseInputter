@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 9d2dddaae5c812841accc43e4da1fccd
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Longbow/Prefabs/BalloonPop.prefab
+  uploadId: 638640

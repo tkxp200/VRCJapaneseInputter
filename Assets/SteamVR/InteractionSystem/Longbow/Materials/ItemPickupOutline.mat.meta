@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3d938759d8b7a414988ec3261fb5265d
+timeCreated: 1442338990
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Longbow/Materials/ItemPickupOutline.mat
+  uploadId: 638640

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 374354984cbc08b47ba979c830d8e59d
+timeCreated: 1499896666
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Samples/Materials/ThrowingTarget.mat
+  uploadId: 638640

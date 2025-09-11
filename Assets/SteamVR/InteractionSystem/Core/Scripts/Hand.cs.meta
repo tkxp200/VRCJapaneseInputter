@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 29e3e4511966ba94d8ba0b98c6c62f82
+timeCreated: 1544851963
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Core/Scripts/Hand.cs
+  uploadId: 638640

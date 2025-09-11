@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: f05229f3db0d24a4e9df9f11919f341a
+timeCreated: 1548286473
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Samples/Scripts/RenderModelChangerUI.cs
+  uploadId: 638640

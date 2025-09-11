@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6dc41a1d6d2a48e41a7adc3e27f1a9ff
+timeCreated: 1548112124
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Poses/HappyBallPoseSqueezed.asset
+  uploadId: 638640

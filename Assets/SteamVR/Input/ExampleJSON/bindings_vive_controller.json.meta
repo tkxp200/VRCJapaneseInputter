@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 80888c8fe60f72c41bd99822a92c9232
+timeCreated: 1541544002
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Input/ExampleJSON/bindings_vive_controller.json
+  uploadId: 638640

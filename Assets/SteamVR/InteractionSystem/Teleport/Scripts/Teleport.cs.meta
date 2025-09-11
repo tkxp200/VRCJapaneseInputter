@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: f260935093f73f241bfaa1578e5e5506
+timeCreated: 1544852190
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: -32000
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Teleport/Scripts/Teleport.cs
+  uploadId: 638640

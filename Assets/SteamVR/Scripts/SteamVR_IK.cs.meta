@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: ea22dba3baf2ecc4d886bf2444444228
+timeCreated: 1544852187
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Scripts/SteamVR_IK.cs
+  uploadId: 638640

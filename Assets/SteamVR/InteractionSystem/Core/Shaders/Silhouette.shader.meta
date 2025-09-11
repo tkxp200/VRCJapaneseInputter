@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 0c1cf10ea69e60e4f9eb8955749f88ec
+timeCreated: 1456009779
+licenseType: Store
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Core/Shaders/Silhouette.shader
+  uploadId: 638640

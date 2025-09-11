@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 67d718aebba8c7a46b689029511fb127
+timeCreated: 1521152334
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Input/Plugins/JSON.NET/LICENSE_SaladLab
+  uploadId: 638640

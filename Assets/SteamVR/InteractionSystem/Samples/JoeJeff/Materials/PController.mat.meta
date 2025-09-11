@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 76f42063ac80e7e45aa27bebda813768
+timeCreated: 1533939584
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Samples/JoeJeff/Materials/PController.mat
+  uploadId: 638640

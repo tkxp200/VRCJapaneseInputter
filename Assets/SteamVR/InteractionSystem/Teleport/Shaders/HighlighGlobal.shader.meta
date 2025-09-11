@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 83dad9aa8d6cebf40ae959ecbffd100a
+timeCreated: 1458163733
+licenseType: Store
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Teleport/Shaders/HighlighGlobal.shader
+  uploadId: 638640

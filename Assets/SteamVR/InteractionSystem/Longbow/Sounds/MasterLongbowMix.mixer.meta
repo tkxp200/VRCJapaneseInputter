@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 95096f29d1ddcd647ace66f3641d42f5
+timeCreated: 1439327332
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Longbow/Sounds/MasterLongbowMix.mixer
+  uploadId: 638640

@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 9799564b983d9664b824f7b9b2ff8d88
+timeCreated: 1521997394
+licenseType: Store
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/trackObj.cs
+  uploadId: 638640

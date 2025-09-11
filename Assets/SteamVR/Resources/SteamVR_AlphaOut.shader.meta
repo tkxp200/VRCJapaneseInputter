@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: da25bb0dccfd3894181fc5e84714cd17
+timeCreated: 1456189850
+licenseType: Store
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Resources/SteamVR_AlphaOut.shader
+  uploadId: 638640

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7fe1fef3cfad86946b3a549d6934330b
+timeCreated: 1444265605
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Longbow/Prefabs/ArcheryWeeble.prefab
+  uploadId: 638640

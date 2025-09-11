@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 88075a54c7fb1484ba25db394b612917
+timeCreated: 1534551976
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Samples/Prefabs/Button.prefab
+  uploadId: 638640

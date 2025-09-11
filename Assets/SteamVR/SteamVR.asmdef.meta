@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 1fbf338ef6b952a448262a7ff7df5fe4
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/SteamVR.asmdef
+  uploadId: 638640

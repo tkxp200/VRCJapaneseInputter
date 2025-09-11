@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 6c580c8ee65b2064b9cecf9c8a56b126
+timeCreated: 1521130773
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Input/Editor/SteamVR_Input_Action_Pose_PropertyEditor.cs
+  uploadId: 638640

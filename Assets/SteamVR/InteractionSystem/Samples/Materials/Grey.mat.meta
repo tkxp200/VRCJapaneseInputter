@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 07bcd4e0597eb0648b7a45624f2e0594
+timeCreated: 1436400675
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Samples/Materials/Grey.mat
+  uploadId: 638640

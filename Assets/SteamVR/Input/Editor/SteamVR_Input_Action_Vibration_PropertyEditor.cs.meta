@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 6687413c4fe847b418c7a33716013e07
+timeCreated: 1521742954
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Input/Editor/SteamVR_Input_Action_Vibration_PropertyEditor.cs
+  uploadId: 638640

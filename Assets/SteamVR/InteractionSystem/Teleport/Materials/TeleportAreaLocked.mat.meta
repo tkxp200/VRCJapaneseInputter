@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f6802bd638faedf4dbe4a57c1f222991
+timeCreated: 1448412208
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Teleport/Materials/TeleportAreaLocked.mat
+  uploadId: 638640

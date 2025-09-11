@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9c82398bce8eb28438c2b919280ec0e9
+timeCreated: 1705015006
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/OpenVRUnityXRPackage/Editor/com.valvesoftware.unity.openvr-1.2.1.tgz
+  uploadId: 638640

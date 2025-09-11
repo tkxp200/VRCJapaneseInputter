@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 119e4a9328cca524ba289f8978bac7cc
+timeCreated: 1545954566
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Input/ExampleJSON/binding_vive_tracker_camera.json
+  uploadId: 638640

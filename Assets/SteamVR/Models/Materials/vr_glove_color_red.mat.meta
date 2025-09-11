@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8f32b3d74401443479c643e48c21915a
+timeCreated: 1531421267
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Models/Materials/vr_glove_color_red.mat
+  uploadId: 638640

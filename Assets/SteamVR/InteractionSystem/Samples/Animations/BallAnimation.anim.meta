@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 40c8cba0bc8712e4ead8747ee58dd141
+timeCreated: 1436402878
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Samples/Animations/BallAnimation.anim
+  uploadId: 638640

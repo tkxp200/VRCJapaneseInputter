@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3bbb445147c574240a8b87a1193788b5
+timeCreated: 1456708947
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Core/Materials/SeeThru.mat
+  uploadId: 638640

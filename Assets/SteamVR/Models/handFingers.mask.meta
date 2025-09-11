@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 822c72f828488434a89ef1d2b9372069
+timeCreated: 1531517591
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Models/handFingers.mask
+  uploadId: 638640

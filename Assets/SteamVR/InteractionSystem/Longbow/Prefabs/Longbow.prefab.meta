@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f1f5f898fbfdb80478825ce9b01fe8ae
+timeCreated: 1457488966
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Longbow/Prefabs/Longbow.prefab
+  uploadId: 638640

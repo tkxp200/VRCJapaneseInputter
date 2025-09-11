@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e3b77830391f10343929883b18f4d5ae
+timeCreated: 1478562444
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Samples/Interactions_Example.unity
+  uploadId: 638640

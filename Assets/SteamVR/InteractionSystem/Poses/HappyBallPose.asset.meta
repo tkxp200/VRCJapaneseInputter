@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5faebc5465b41b641bf7285f25ce9ab9
+timeCreated: 1548111697
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Poses/HappyBallPose.asset
+  uploadId: 638640

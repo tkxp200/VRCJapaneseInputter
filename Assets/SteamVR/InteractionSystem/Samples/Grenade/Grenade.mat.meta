@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7156e712e2c3e7944a1ccdaf56734abb
+timeCreated: 1537315983
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Samples/Grenade/Grenade.mat
+  uploadId: 638640

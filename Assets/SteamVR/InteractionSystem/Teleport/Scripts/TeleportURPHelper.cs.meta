@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: eedfa54ef02254a428194e8de8e14d75
+timeCreated: 1591419079
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Teleport/Scripts/TeleportURPHelper.cs
+  uploadId: 638640

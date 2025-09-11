@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 687da068c36e4094297e907f030b1137
+timeCreated: 1588130101
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Input/ExampleJSON/bindings_logitech_stylus.json
+  uploadId: 638640

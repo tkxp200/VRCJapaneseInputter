@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3f7b904f6bd0b77429148042b0254530
+timeCreated: 1533928125
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Resources/SteamVR_HoverHighlight.mat
+  uploadId: 638640

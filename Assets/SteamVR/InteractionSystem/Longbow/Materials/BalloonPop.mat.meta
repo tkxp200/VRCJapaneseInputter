@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2d01d8c885250364bac66a45791f02e1
+timeCreated: 1478656020
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Longbow/Materials/BalloonPop.mat
+  uploadId: 638640

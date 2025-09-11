@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 25bc1e9c1d9042d4781cb174093aaaed
+timeCreated: 1478656749
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Longbow/Materials/BalloonPopLine.mat
+  uploadId: 638640

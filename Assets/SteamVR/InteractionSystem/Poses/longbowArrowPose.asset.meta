@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 12d7f50e857b2f44a87430b50a8a0c25
+timeCreated: 1546317619
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Poses/longbowArrowPose.asset
+  uploadId: 638640

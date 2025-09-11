@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 5828f252c3c228f4b931f66c21e525c4
+timeCreated: 1544852186
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Scripts/SteamVR_CameraMask.cs
+  uploadId: 638640

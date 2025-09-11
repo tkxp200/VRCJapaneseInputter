@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 9471d2206e57ca246a4bf982f3c29c8f
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Longbow/Prefabs/FireSmall.prefab
+  uploadId: 638640

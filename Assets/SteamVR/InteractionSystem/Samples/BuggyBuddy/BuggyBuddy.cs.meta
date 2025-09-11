@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 68cfc2d5837cbbb4fadf8b044ca88bb1
+timeCreated: 1520897566
+licenseType: Store
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/BuggyBuddy.cs
+  uploadId: 638640

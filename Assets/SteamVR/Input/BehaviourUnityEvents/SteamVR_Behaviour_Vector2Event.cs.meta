@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 091545c123a858440b2e32a3f299a923
+timeCreated: 1548282626
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Input/BehaviourUnityEvents/SteamVR_Behaviour_Vector2Event.cs
+  uploadId: 638640

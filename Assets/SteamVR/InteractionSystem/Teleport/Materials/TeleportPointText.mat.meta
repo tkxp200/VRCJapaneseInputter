@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6e8b24558e6899742b276a1b6c480de1
+timeCreated: 1447098742
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Teleport/Materials/TeleportPointText.mat
+  uploadId: 638640

@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 037de2161ddbc6f4e96de7dd85ea6686
+timeCreated: 1528762595
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Samples/Scripts/TargetHitEffect.cs
+  uploadId: 638640

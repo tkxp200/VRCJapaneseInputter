@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: bc5014b5bd4c9254885346ccb2479e34
+timeCreated: 1521130774
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Input/Editor/SteamVR_Input_Action_Out_PropertyEditor.cs
+  uploadId: 638640

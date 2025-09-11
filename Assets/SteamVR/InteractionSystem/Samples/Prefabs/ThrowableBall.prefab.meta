@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e0b086fbb874df143b6ac8f53cea5424
+timeCreated: 1478570038
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Samples/Prefabs/ThrowableBall.prefab
+  uploadId: 638640

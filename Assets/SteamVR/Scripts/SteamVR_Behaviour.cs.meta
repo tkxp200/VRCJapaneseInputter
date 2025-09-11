@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 1aaa8a3afb932fe478757c1e89cf0cd5
+timeCreated: 1544852184
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: -31900
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Scripts/SteamVR_Behaviour.cs
+  uploadId: 638640

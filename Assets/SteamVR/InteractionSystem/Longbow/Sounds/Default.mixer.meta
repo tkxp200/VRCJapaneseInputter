@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: ec12f7772c03e4c4c9e4c2f1643595ad
+timeCreated: 1522253498
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 24100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Longbow/Sounds/Default.mixer
+  uploadId: 638640

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 057574477c20401448aba7c848873712
+timeCreated: 1520893379
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Prefabs/vr_glove_left.prefab
+  uploadId: 638640

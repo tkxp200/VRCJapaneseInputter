@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 24592bbd7bf3c5c489c70fba25d75ee0
+timeCreated: 1568160751
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/SnapTurn/snapturnFX.controller
+  uploadId: 638640

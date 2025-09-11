@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 7294a236dff50fc44b22361c6187a574
+timeCreated: 1560296085
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Scripts/SteamVR_ExternalCamera_LegacyManager.cs
+  uploadId: 638640

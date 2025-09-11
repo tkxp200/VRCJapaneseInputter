@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fab760ff58ade2e45a3ae64ba79b0798
+timeCreated: 1568830083
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Input/ExampleJSON/binding_index_hmd.json
+  uploadId: 638640

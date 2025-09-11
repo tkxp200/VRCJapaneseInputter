@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: e7418c7dd8f977d4e969202d3fa7e926
+timeCreated: 1542680608
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Input/SteamVR_Skeleton_Poser.cs
+  uploadId: 638640

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 73f816dd3537a4c44988f340a5da70b9
+timeCreated: 1567796930
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Core/Prefabs/HandColliderLeft.prefab
+  uploadId: 638640

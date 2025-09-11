@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 40fa752affdc6cf45a47396764154085
+timeCreated: 1454951948
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Longbow/Materials/LongbowString.mat
+  uploadId: 638640

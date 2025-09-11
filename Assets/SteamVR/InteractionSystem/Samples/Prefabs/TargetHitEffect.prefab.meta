@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ada35c93b68ad004d9b4e7bd686cf189
+timeCreated: 1528765391
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Samples/Prefabs/TargetHitEffect.prefab
+  uploadId: 638640

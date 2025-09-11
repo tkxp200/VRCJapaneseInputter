@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7a135b1a2cb9c8f488d4dd00c55ab283
+timeCreated: 1446612033
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Teleport/Prefabs/Teleporting.prefab
+  uploadId: 638640

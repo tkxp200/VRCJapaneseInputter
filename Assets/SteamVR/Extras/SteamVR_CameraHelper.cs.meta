@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: c30a2316e98e1dc4b97e432a1301f85c
+timeCreated: 1591403558
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Extras/SteamVR_CameraHelper.cs
+  uploadId: 638640

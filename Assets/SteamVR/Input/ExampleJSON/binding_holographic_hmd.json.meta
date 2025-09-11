@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1bf9d7fa6f3987e4e9b1a610c756e32b
+timeCreated: 1541544002
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Input/ExampleJSON/binding_holographic_hmd.json
+  uploadId: 638640

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 48530aab98abaa541acf2cf3f3f06d20
+timeCreated: 1534871662
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Samples/Prefabs/JoeJeff.prefab
+  uploadId: 638640

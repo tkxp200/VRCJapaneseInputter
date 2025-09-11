@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ceb48f72b3325c74e95838fb760d0ab0
+timeCreated: 1531864447
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Models/Materials/AlienHand.mat
+  uploadId: 638640

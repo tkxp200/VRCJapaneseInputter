@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 213b7d69786635c498d1287c5505990e
+timeCreated: 1559681293
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Poses/fallback_relaxed.asset
+  uploadId: 638640

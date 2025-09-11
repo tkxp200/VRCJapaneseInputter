@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5fa42bb9e52706a42b8a1eaf0b54326a
+timeCreated: 1456611350
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Hints/Prefabs/ControllerTextHint.prefab
+  uploadId: 638640

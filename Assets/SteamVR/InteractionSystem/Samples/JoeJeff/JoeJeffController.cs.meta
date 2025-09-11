@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 2c178cd2631c07944bc48d4c9d824edb
+timeCreated: 1533939705
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Samples/JoeJeff/JoeJeffController.cs
+  uploadId: 638640

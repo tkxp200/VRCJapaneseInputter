@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0bbd832b13230de459422d3264b929c7
+timeCreated: 1568160751
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/SnapTurn/Materials/snapTurnArrow.mat
+  uploadId: 638640

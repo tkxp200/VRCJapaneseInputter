@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 08f1e4823ecc8234e88f2849f3d9b2cc
+timeCreated: 1532716409
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Samples/Interactions_Example/LightingData.asset
+  uploadId: 638640

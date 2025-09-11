@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2476fd5d698aa614194466a3af5d192f
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Input/Editor/SteamVR_Input_Editor.asmdef
+  uploadId: 638640

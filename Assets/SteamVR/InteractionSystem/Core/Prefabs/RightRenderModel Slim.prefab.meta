@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 837f93beb9a614743ae3a2c0ada7c388
+timeCreated: 1531273121
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Core/Prefabs/RightRenderModel Slim.prefab
+  uploadId: 638640

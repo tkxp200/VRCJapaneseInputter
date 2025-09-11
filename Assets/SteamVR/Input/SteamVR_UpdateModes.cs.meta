@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 5811a8be2382cd440970c707dccb6fb0
+timeCreated: 1544852190
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Input/SteamVR_UpdateModes.cs
+  uploadId: 638640

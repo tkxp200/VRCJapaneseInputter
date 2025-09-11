@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9fff76eb68ad4c44b87be9e2ca168a80
+timeCreated: 1478653933
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Longbow/Materials/TorchFire.mat
+  uploadId: 638640

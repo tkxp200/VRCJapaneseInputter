@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f1f5a7b9d67d8354799973d55caf81ad
+timeCreated: 1531871793
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Models/Materials/floppyHand.mat
+  uploadId: 638640

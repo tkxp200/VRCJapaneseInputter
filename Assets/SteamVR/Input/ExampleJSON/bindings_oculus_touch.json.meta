@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ac8ef0844edb47f47a2a8edc62df4eab
+timeCreated: 1541544002
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Input/ExampleJSON/bindings_oculus_touch.json
+  uploadId: 638640

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c8bc389823e18b94ca6033a4b4bd7c63
+timeCreated: 1529436852
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Samples/Models/simpleLeftHandController.controller
+  uploadId: 638640

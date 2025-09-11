@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f7cd62d595c763c428123f260c78b711
+timeCreated: 1456804074
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Longbow/Materials/Arrow.mat
+  uploadId: 638640

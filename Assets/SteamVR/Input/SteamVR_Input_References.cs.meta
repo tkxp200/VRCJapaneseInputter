@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 4d10323487cb44348b830bc017eb40b4
+timeCreated: 1544852188
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Input/SteamVR_Input_References.cs
+  uploadId: 638640

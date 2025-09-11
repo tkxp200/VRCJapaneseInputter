@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 3bca11e0534f4e742846c41cf3f1ff29
+timeCreated: 1520810249
+licenseType: Store
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Audio/AmbientSound.cs
+  uploadId: 638640

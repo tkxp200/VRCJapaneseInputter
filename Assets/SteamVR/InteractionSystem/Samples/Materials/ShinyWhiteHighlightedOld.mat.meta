@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c5a10ebcdfbfdfe4e94b37a089618ed5
+timeCreated: 1436400936
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Samples/Materials/ShinyWhiteHighlightedOld.mat
+  uploadId: 638640

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 25505c45cde55ab4581c30195145adc8
+timeCreated: 1531864465
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Models/Materials/No Name.mat
+  uploadId: 638640

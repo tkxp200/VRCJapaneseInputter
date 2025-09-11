@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 8c0dec2678a8ce94dbdd749500441172
+timeCreated: 1540850400
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Input/Editor/SteamVR_Input_ActionManifest_Manager.cs
+  uploadId: 638640

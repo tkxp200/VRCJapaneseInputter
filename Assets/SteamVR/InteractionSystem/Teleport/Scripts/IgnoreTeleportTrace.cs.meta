@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: dc3be917a80086a48b97933694257f09
+timeCreated: 1544851963
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Teleport/Scripts/IgnoreTeleportTrace.cs
+  uploadId: 638640

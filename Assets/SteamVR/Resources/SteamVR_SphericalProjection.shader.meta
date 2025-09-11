@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 43b10deca54ca524c8cd9a0fcb622325
+timeCreated: 1462380123
+licenseType: Store
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Resources/SteamVR_SphericalProjection.shader
+  uploadId: 638640

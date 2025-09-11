@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: dc06161b6d97feb419f45f03b62e14b9
+timeCreated: 1430240738
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Core/Prefabs/Player.prefab
+  uploadId: 638640

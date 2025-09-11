@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d2bbbd01c5b7a6b4bb5a1316f21fc1ff
+timeCreated: 1446615653
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Teleport/Materials URP/URPTeleportAreaVisible.mat
+  uploadId: 638640

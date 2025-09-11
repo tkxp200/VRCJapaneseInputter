@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 0eda13fed4d1be14aa1ab948b08aef30
+timeCreated: 1548183440
+licenseType: Store
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Samples/Squishy/SquishyDeform.shader
+  uploadId: 638640

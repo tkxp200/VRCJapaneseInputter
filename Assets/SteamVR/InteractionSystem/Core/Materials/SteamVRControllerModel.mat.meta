@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3c433e134e4719444b65bf064a77e22e
+timeCreated: 1455877211
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Core/Materials/SteamVRControllerModel.mat
+  uploadId: 638640

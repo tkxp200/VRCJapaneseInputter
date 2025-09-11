@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 380bbbca09a806c4c8607dd111d9ed8f
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Longbow/Prefabs/Torch.prefab
+  uploadId: 638640

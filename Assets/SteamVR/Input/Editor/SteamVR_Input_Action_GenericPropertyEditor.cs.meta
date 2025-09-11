@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 2800414421e3d124486646cbf8206a64
+timeCreated: 1520474969
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Input/Editor/SteamVR_Input_Action_GenericPropertyEditor.cs
+  uploadId: 638640

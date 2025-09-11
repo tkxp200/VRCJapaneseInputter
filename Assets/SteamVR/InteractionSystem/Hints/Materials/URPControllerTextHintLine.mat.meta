@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d51c2116441c31e408cfcd6e44b1ff93
+timeCreated: 1456610834
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Hints/Materials/URPControllerTextHintLine.mat
+  uploadId: 638640

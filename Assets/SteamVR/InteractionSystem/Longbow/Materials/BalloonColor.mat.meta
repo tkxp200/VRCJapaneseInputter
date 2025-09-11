@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 406981998f1234442a4f2eb50cfe07e1
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Longbow/Materials/BalloonColor.mat
+  uploadId: 638640

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d8d1e5711b2c77d48ac96e769aaff27a
+timeCreated: 1531273118
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Core/Prefabs/LeftRenderModel Alien.prefab
+  uploadId: 638640

@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: f0abecbe8a5e4e04dab8f886e1d6d070
+timeCreated: 1548282627
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Input/BehaviourUnityEvents/SteamVR_Behaviour_Pose_ConnectedChangedEvent.cs
+  uploadId: 638640

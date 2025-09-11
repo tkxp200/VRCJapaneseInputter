@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: f195fe0cc42f49241a3c7521a19fa350
+timeCreated: 1544851870
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Longbow/Scripts/ArrowheadRotation.cs
+  uploadId: 638640

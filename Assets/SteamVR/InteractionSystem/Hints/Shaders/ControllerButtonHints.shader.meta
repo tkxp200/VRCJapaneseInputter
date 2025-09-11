@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: de053fb214897cc439db35fc0361a282
+timeCreated: 1452302861
+licenseType: Store
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Hints/Shaders/ControllerButtonHints.shader
+  uploadId: 638640

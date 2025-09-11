@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 55f0e497bac1408458ff9dcebe0b775a
+timeCreated: 1533242004
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/Simple Sample.unity
+  uploadId: 638640

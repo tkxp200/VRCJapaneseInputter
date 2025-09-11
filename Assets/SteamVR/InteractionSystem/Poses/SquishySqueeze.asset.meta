@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e89c10566133f4049b9923e9f4d6f50f
+timeCreated: 1548093380
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32647
+  packageName: SteamVR Plugin
+  packageVersion: 2.8.0 (sdk 2.0.10)
+  assetPath: Assets/SteamVR/InteractionSystem/Poses/SquishySqueeze.asset
+  uploadId: 638640
