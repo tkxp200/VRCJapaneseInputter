@@ -254,7 +254,7 @@ namespace OverlayInputUtil
             { SmartPhoneKeyType.Y, new List<string>       { "t", "u", "v", "8" } },
             { SmartPhoneKeyType.R, new List<string>       { "w", "x", "y", "z", "9" } },
             { SmartPhoneKeyType.W, new List<string>       { "’", "”", "；", "0" } },
-            { SmartPhoneKeyType.SYMBOL, new List<string>  { ".", "，", "?", "!" } }
+            { SmartPhoneKeyType.SYMBOL, new List<string>  { ".", ",", "?", "!" } }
         };
 
         public static Dictionary<SmartPhoneKeyType, List<string>> NumberSubKeys = new Dictionary<SmartPhoneKeyType, List<string>>()
@@ -270,7 +270,7 @@ namespace OverlayInputUtil
             { SmartPhoneKeyType.R, new List<string>       { "9", "^", "|", "＼" } },
             { SmartPhoneKeyType.DAKUTEN, new List<string> { "(", ")", "[", "]" } },
             { SmartPhoneKeyType.W, new List<string>       { "0", "～", "...", "@" } },
-            { SmartPhoneKeyType.SYMBOL, new List<string>  { ".", "，", "-", "/" } }
+            { SmartPhoneKeyType.SYMBOL, new List<string>  { ".", ",", "-", "/" } }
         };
     }
 }
