@@ -7,8 +7,6 @@ using LOUDSPatriciaTrie;
 using JPInputTool.Utils.DictionaryTools;
 using JPInputTool.Utils;
 using System.Text;
-using System.Diagnostics;
-using Unity.VisualScripting.Antlr3.Runtime.Tree;
 
 namespace JPInputTool.Core
 {
@@ -88,6 +86,14 @@ namespace JPInputTool.Core
         {
             if (text.Length == 0) return new();
             List<(ResultPair, string, int)> results = new();
+            if (IsOnlyAlphaNumeric(text))
+            {
+                foreach (var item in GetEnglishPrediction(text))
+                {
+                    results.Add((item, item.Candidate, text.Length));
+                }
+                return results;
+            }
 
             if (text.Length >= USE_PREDICTION_MIN_TEXT_LENGTH)
             {
