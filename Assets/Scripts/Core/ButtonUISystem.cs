@@ -6,7 +6,7 @@ public class ButtonUISystem : MonoBehaviour
 {
     [SerializeField] GameObject numberButtonParent;
     [SerializeField] GameObject hiraganaButtonParent;
-    [SerializeField] GameObject katakanaButtonParent;
+    // [SerializeField] GameObject katakanaButtonParent;
     [SerializeField] GameObject alphabetButtonParent;
     [SerializeField] GameObject cursorButtonParent;
     [SerializeField] GameObject transLiterateButtonParent;
@@ -26,23 +26,23 @@ public class ButtonUISystem : MonoBehaviour
         {
             case MainSystemUtil.InputTypes.Hiragana:
             {
-                katakanaButtonParent.SetActive(false);
+                // katakanaButtonParent.SetActive(false);
                 alphabetButtonParent.SetActive(false);
                 numberButtonParent.SetActive(false);
                 hiraganaButtonParent.SetActive(true);
                 break;
             }
-            case MainSystemUtil.InputTypes.Katakana:
-            {
-                alphabetButtonParent.SetActive(false);
-                numberButtonParent.SetActive(false);
-                hiraganaButtonParent.SetActive(false);
-                katakanaButtonParent.SetActive(true);
-                break;
-            }
+            // case MainSystemUtil.InputTypes.Katakana:
+            // {
+            //     alphabetButtonParent.SetActive(false);
+            //     numberButtonParent.SetActive(false);
+            //     hiraganaButtonParent.SetActive(false);
+            //     katakanaButtonParent.SetActive(true);
+            //     break;
+            // }
             case MainSystemUtil.InputTypes.Alphabet:
             {
-                katakanaButtonParent.SetActive(false);
+                // katakanaButtonParent.SetActive(false);
                 numberButtonParent.SetActive(false);
                 hiraganaButtonParent.SetActive(false);
                 alphabetButtonParent.SetActive(true);
@@ -50,7 +50,7 @@ public class ButtonUISystem : MonoBehaviour
             }
             case MainSystemUtil.InputTypes.Number:
             {
-                katakanaButtonParent.SetActive(false);
+                // katakanaButtonParent.SetActive(false);
                 alphabetButtonParent.SetActive(false);
                 hiraganaButtonParent.SetActive(false);
                 numberButtonParent.SetActive(true);

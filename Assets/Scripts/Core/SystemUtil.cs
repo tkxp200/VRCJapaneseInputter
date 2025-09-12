@@ -7,7 +7,7 @@ namespace SystemUtil
         public enum InputTypes
         {
             Hiragana,
-            Katakana,
+            // Katakana,
             Alphabet,
             Number
         };

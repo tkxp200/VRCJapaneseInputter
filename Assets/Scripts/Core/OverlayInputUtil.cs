@@ -226,21 +226,21 @@ namespace OverlayInputUtil
             { SmartPhoneKeyType.SYMBOL, new List<string>  { "、", "。", "？", "！" } }
         };
 
-        public static Dictionary<SmartPhoneKeyType, List<string>> KatakanaSubKeys = new Dictionary<SmartPhoneKeyType, List<string>>()
-        {
-            { SmartPhoneKeyType.A, new List<string>       { "ア", "イ", "ウ", "エ", "オ" } },
-            { SmartPhoneKeyType.K, new List<string>       { "カ", "キ", "ク", "ケ", "コ" } },
-            { SmartPhoneKeyType.S, new List<string>       { "サ", "シ", "ス", "セ", "ソ" } },
-            { SmartPhoneKeyType.T, new List<string>       { "タ", "チ", "ツ", "テ", "ト" } },
-            { SmartPhoneKeyType.N, new List<string>       { "ナ", "ニ", "ヌ", "ネ", "ノ" } },
-            { SmartPhoneKeyType.H, new List<string>       { "ハ", "ヒ", "フ", "ヘ", "ホ" } },
-            { SmartPhoneKeyType.M, new List<string>       { "マ", "ミ", "ム", "ヌ", "モ" } },
-            { SmartPhoneKeyType.Y, new List<string>       { "ヤ", "{", "ユ",  "}", "ヨ" } },
-            { SmartPhoneKeyType.R, new List<string>       { "ラ", "リ", "ル", "レ", "ロ" } },
-            { SmartPhoneKeyType.DAKUTEN, new List<string> { "゛", "小", "[", "゜" } },
-            { SmartPhoneKeyType.W, new List<string>       { "ワ", "ヲ", "]", "ン" } },
-            { SmartPhoneKeyType.SYMBOL, new List<string>  { "ー", ".", "!?", "￥" } }
-        };
+        // public static Dictionary<SmartPhoneKeyType, List<string>> KatakanaSubKeys = new Dictionary<SmartPhoneKeyType, List<string>>()
+        // {
+        //     { SmartPhoneKeyType.A, new List<string>       { "ア", "イ", "ウ", "エ", "オ" } },
+        //     { SmartPhoneKeyType.K, new List<string>       { "カ", "キ", "ク", "ケ", "コ" } },
+        //     { SmartPhoneKeyType.S, new List<string>       { "サ", "シ", "ス", "セ", "ソ" } },
+        //     { SmartPhoneKeyType.T, new List<string>       { "タ", "チ", "ツ", "テ", "ト" } },
+        //     { SmartPhoneKeyType.N, new List<string>       { "ナ", "ニ", "ヌ", "ネ", "ノ" } },
+        //     { SmartPhoneKeyType.H, new List<string>       { "ハ", "ヒ", "フ", "ヘ", "ホ" } },
+        //     { SmartPhoneKeyType.M, new List<string>       { "マ", "ミ", "ム", "ヌ", "モ" } },
+        //     { SmartPhoneKeyType.Y, new List<string>       { "ヤ", "{", "ユ",  "}", "ヨ" } },
+        //     { SmartPhoneKeyType.R, new List<string>       { "ラ", "リ", "ル", "レ", "ロ" } },
+        //     { SmartPhoneKeyType.DAKUTEN, new List<string> { "゛", "小", "[", "゜" } },
+        //     { SmartPhoneKeyType.W, new List<string>       { "ワ", "ヲ", "]", "ン" } },
+        //     { SmartPhoneKeyType.SYMBOL, new List<string>  { "ー", ".", "!?", "￥" } }
+        // };
 
         public static Dictionary<SmartPhoneKeyType, List<string>> AlphabetSubKeys = new Dictionary<SmartPhoneKeyType, List<string>>()
         {

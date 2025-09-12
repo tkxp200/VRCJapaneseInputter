@@ -140,8 +140,8 @@ public class SmartPhoneInputSystem : MonoBehaviour
             currentKeyType = key;
             if(mainSystem.GetInputType() == MainSystemUtil.InputTypes.Hiragana)
                 keys = SmartPhoneInputUtil.HiraganaSubKeys[key];
-            else if(mainSystem.GetInputType() == MainSystemUtil.InputTypes.Katakana)
-                keys = SmartPhoneInputUtil.KatakanaSubKeys[key];
+            // else if(mainSystem.GetInputType() == MainSystemUtil.InputTypes.Katakana)
+            //     keys = SmartPhoneInputUtil.KatakanaSubKeys[key];
             else if(mainSystem.GetInputType() == MainSystemUtil.InputTypes.Alphabet)
                 keys = SmartPhoneInputUtil.AlphabetSubKeys[key];
             else if(mainSystem.GetInputType() == MainSystemUtil.InputTypes.Number)
