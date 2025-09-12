@@ -1445,17 +1445,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 182882505}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 389331796}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 80, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &182882507
 MonoBehaviour:
@@ -1477,7 +1477,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u78BA\u5B9A"
+  m_text: '     ]'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1dceabcd868825347a4bf85bdc68e002, type: 2}
   m_sharedMaterial: {fileID: -6983458972381495562, guid: 1dceabcd868825347a4bf85bdc68e002, type: 2}
@@ -1510,9 +1510,9 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_fontStyle: 1
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 4096
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -4511,7 +4511,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 58927871}
         m_TargetAssemblyTypeName: TextManagementSystem, Assembly-CSharp
-        m_MethodName: EnterText
+        m_MethodName: OnClickTransLiterateButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11430,7 +11430,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u30A2/\uFF21"
+  m_text: "\u3042/A/1"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1dceabcd868825347a4bf85bdc68e002, type: 2}
   m_sharedMaterial: {fileID: -6983458972381495562, guid: 1dceabcd868825347a4bf85bdc68e002, type: 2}
@@ -11457,8 +11457,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -23525,7 +23525,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberButtonParent: {fileID: 722990625}
   hiraganaButtonParent: {fileID: 554053182}
-  katakanaButtonParent: {fileID: 1696290245}
   alphabetButtonParent: {fileID: 1881505590}
   cursorButtonParent: {fileID: 1921777864}
   transLiterateButtonParent: {fileID: 701422635}

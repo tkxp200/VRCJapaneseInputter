@@ -4,6 +4,7 @@ using TMPro;
 
 public class TextManagementSystem : MonoBehaviour
 {
+    const char WHITE_CHAR = ' ';
     [SerializeField] CandidateSystem candidateSystem;
     [SerializeField] SendMessageSystem sendMessageSystem;
     [SerializeField] ButtonUISystem buttonUISystem;
@@ -33,10 +34,18 @@ public class TextManagementSystem : MonoBehaviour
 
     public void TextTransLiterate(string text, int size)
     {
-        transLiteratedText += text;
-        writingText = writingText.Substring(size);
-        buttonUISystem.SetTransLiterateButtonVisible();
-        ChangeInputFieldText(0);
+        if (writingText.Length != 0)
+        {
+            transLiteratedText += text;
+            writingText = writingText.Substring(size);
+            buttonUISystem.SetTransLiterateButtonVisible();
+            ChangeInputFieldText(0);
+        }
+        else
+        {
+            transLiteratedText += WHITE_CHAR;
+            ChangeInputFieldText(0);
+        }
     }
 
     public void DeleteText()
