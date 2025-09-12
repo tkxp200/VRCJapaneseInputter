@@ -74,6 +74,7 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 /[Aa]ssets/Font
+/[Aa]ssets/TextMeshPro
 /[Aa]ssets/dic/conversion
 /[Aa]ssets/dic/source
 /unityProject.vrmanifest
