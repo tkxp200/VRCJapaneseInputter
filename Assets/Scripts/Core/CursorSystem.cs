@@ -1,8 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using Valve.VR;
-using OverlayVRUtil;
 
 public class CursorSystem : MonoBehaviour
 {

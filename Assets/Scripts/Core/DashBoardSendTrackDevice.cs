@@ -1,9 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
-using Valve.VR;
 using SystemUtil;
 
 public class DashBoardSendTrackDevice : MonoBehaviour

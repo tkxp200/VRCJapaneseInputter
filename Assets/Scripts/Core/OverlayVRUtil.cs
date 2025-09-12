@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using Valve.VR;
-using Mono.Cecil.Cil;
 
 namespace OverlayVRUtil
 {
