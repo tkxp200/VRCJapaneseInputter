@@ -1,4 +1,4 @@
-# VRCJI
+# VRCJI(VRCJapaneseInputter)
 
 ## 概要
 
