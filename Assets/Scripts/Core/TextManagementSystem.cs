@@ -36,7 +36,7 @@ public class TextManagementSystem : MonoBehaviour
     {
         transLiteratedText += text;
         writingText = writingText.Substring(size);
-        buttonUISystem.SetTransLiterateButtonVisible();
+        // buttonUISystem.SetTransLiterateButtonVisible();
         ChangeInputFieldText(0);
     }
 
@@ -44,7 +44,7 @@ public class TextManagementSystem : MonoBehaviour
     {
         if (writingText.Length != 0)
         {
-            buttonUISystem.SetCursorButtonVisible();
+            // buttonUISystem.SetCursorButtonVisible();
             ChangeInputFieldText(writingText.Length);
         }
         else
@@ -68,13 +68,13 @@ public class TextManagementSystem : MonoBehaviour
         }
         else return;
         ChangeInputFieldText(0);
-        buttonUISystem.SetTransLiterateButtonVisible();
+        // buttonUISystem.SetTransLiterateButtonVisible();
     }
 
     public void AllDeleteText()
     {
         InitText();
-        buttonUISystem.SetTransLiterateButtonVisible();
+        // buttonUISystem.SetTransLiterateButtonVisible();
     }
 
     public string GetCurrentText()
@@ -94,6 +94,7 @@ public class TextManagementSystem : MonoBehaviour
 
     public void OnClickCopyButton()
     {
+        EnterText();
         GUIUtility.systemCopyBuffer = GetCurrentText();
         InitText();
     }
@@ -102,7 +103,7 @@ public class TextManagementSystem : MonoBehaviour
     {
         transLiteratedText += writingText;
         writingText = "";
-        buttonUISystem.SetTransLiterateButtonVisible();
+        // buttonUISystem.SetTransLiterateButtonVisible();
         ChangeInputFieldText(0);
     }
 
@@ -211,8 +212,8 @@ public class TextManagementSystem : MonoBehaviour
         }
         else candidateSystem.GenerateCandidate(writingText);
 
-        if(writingText == "" && transLiteratedText != "") buttonUISystem.SetCopyButtonVisible();
-        else buttonUISystem.SetEnterButtonVisible();
+        // if(writingText == "" && transLiteratedText != "") buttonUISystem.SetCopyButtonVisible();
+        // else buttonUISystem.SetEnterButtonVisible();
     }
 
     public void OnClickLeftTransLiterateButton()
