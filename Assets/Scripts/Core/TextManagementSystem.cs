@@ -34,12 +34,18 @@ public class TextManagementSystem : MonoBehaviour
 
     public void TextTransLiterate(string text, int size)
     {
+        transLiteratedText += text;
+        writingText = writingText.Substring(size);
+        buttonUISystem.SetTransLiterateButtonVisible();
+        ChangeInputFieldText(0);
+    }
+
+    public void OnClickTransLiterateButton()
+    {
         if (writingText.Length != 0)
         {
-            transLiteratedText += text;
-            writingText = writingText.Substring(size);
-            buttonUISystem.SetTransLiterateButtonVisible();
-            ChangeInputFieldText(0);
+            buttonUISystem.SetCursorButtonVisible();
+            ChangeInputFieldText(writingText.Length);
         }
         else
         {
@@ -50,15 +56,15 @@ public class TextManagementSystem : MonoBehaviour
 
     public void DeleteText()
     {
-        if(writingText != "")
+        if (writingText != "")
         {
             string oldText = writingText;
-            writingText = oldText.Substring(0, oldText.Length-1);
+            writingText = oldText.Substring(0, oldText.Length - 1);
         }
-        else if(transLiteratedText != "")
+        else if (transLiteratedText != "")
         {
             string oldText = transLiteratedText;
-            transLiteratedText = oldText.Substring(0, oldText.Length-1);
+            transLiteratedText = oldText.Substring(0, oldText.Length - 1);
         }
         else return;
         ChangeInputFieldText(0);
@@ -207,12 +213,6 @@ public class TextManagementSystem : MonoBehaviour
 
         if(writingText == "" && transLiteratedText != "") buttonUISystem.SetCopyButtonVisible();
         else buttonUISystem.SetEnterButtonVisible();
-    }
-
-    public void OnClickTransLiterateButton()
-    {
-        buttonUISystem.SetCursorButtonVisible();
-        ChangeInputFieldText(writingText.Length);
     }
 
     public void OnClickLeftTransLiterateButton()
