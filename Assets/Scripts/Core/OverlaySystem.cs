@@ -21,7 +21,7 @@ public class OverlaySystem : MonoBehaviour
 
     void Awake()
     {
-        // OverlaySystemUtil.InitOpenVR();
+        OverlaySystemUtil.InitOpenVR();
         overlayHandle = OverlayUtil.CreateOverlay("VRCJapaneseInputter_key", "VRCJapaneseInputter");
     }
 
@@ -122,6 +122,6 @@ public class OverlaySystem : MonoBehaviour
 
     private void Destroy()
     {
-        // OverlaySystemUtil.ShutdownOpenVR();
+        OverlaySystemUtil.ShutdownOpenVR();
     }
 }
