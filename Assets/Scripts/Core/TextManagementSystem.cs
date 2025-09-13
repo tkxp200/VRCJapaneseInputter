@@ -210,7 +210,11 @@ public class TextManagementSystem : MonoBehaviour
             candidateSystem.GenerateConversion(candidateText);
             currentTransLiterateIndex = candidateIndex;
         }
-        else candidateSystem.GenerateCandidate(writingText);
+        else
+        {
+            currentTransLiterateIndex = writingText.Length;
+            candidateSystem.GenerateCandidate(writingText);
+        }
 
         // if(writingText == "" && transLiteratedText != "") buttonUISystem.SetCopyButtonVisible();
         // else buttonUISystem.SetEnterButtonVisible();
