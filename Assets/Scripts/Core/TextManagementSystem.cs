@@ -99,6 +99,12 @@ public class TextManagementSystem : MonoBehaviour
         InitText();
     }
 
+    public void OnClickEnterButton(bool flag)
+    {
+        if (writingText.Length != 0) EnterText();
+        else sendMessageSystem.SendMessage(flag);
+    }
+
     public void EnterText()
     {
         transLiteratedText += writingText;
