@@ -1,9 +1,12 @@
 using UnityEngine;
 using SystemUtil;
 using TMPro;
+using Unity.Collections;
 
-public class ButtonUISystem : MonoBehaviour
+public class KeyUISystem : MonoBehaviour
 {
+    const int MAX_INPUT_FIELD_WIDTH = 400;
+    const int INITIAL_INPUT_FIELD_POSITION_X = 10;
     [SerializeField] GameObject numberButtonParent;
     [SerializeField] GameObject hiraganaButtonParent;
     // [SerializeField] GameObject katakanaButtonParent;
@@ -16,22 +19,22 @@ public class ButtonUISystem : MonoBehaviour
 
     public void ChangeSendButtonText(MainSystemUtil.SendTarget sendTarget)
     {
-        if(sendTarget == MainSystemUtil.SendTarget.Chat) sendButtonText.text = "chat";
+        if (sendTarget == MainSystemUtil.SendTarget.Chat) sendButtonText.text = "chat";
         else sendButtonText.text = "win";
     }
 
     public void SetButtonVisible(MainSystemUtil.InputTypes inputType)
     {
-        switch(inputType)
+        switch (inputType)
         {
             case MainSystemUtil.InputTypes.Hiragana:
-            {
-                // katakanaButtonParent.SetActive(false);
-                alphabetButtonParent.SetActive(false);
-                numberButtonParent.SetActive(false);
-                hiraganaButtonParent.SetActive(true);
-                break;
-            }
+                {
+                    // katakanaButtonParent.SetActive(false);
+                    alphabetButtonParent.SetActive(false);
+                    numberButtonParent.SetActive(false);
+                    hiraganaButtonParent.SetActive(true);
+                    break;
+                }
             // case MainSystemUtil.InputTypes.Katakana:
             // {
             //     alphabetButtonParent.SetActive(false);
@@ -41,21 +44,21 @@ public class ButtonUISystem : MonoBehaviour
             //     break;
             // }
             case MainSystemUtil.InputTypes.Alphabet:
-            {
-                // katakanaButtonParent.SetActive(false);
-                numberButtonParent.SetActive(false);
-                hiraganaButtonParent.SetActive(false);
-                alphabetButtonParent.SetActive(true);
-                break;
-            }
+                {
+                    // katakanaButtonParent.SetActive(false);
+                    numberButtonParent.SetActive(false);
+                    hiraganaButtonParent.SetActive(false);
+                    alphabetButtonParent.SetActive(true);
+                    break;
+                }
             case MainSystemUtil.InputTypes.Number:
-            {
-                // katakanaButtonParent.SetActive(false);
-                alphabetButtonParent.SetActive(false);
-                hiraganaButtonParent.SetActive(false);
-                numberButtonParent.SetActive(true);
-                break;
-            }
+                {
+                    // katakanaButtonParent.SetActive(false);
+                    alphabetButtonParent.SetActive(false);
+                    hiraganaButtonParent.SetActive(false);
+                    numberButtonParent.SetActive(true);
+                    break;
+                }
         }
     }
 
@@ -82,4 +85,5 @@ public class ButtonUISystem : MonoBehaviour
         enterButton.SetActive(false);
         copyButton.SetActive(true);
     }
+
 }

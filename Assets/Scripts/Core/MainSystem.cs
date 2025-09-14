@@ -7,7 +7,7 @@ public class MainSystem : MonoBehaviour
 {
     public readonly Vector2 windowSize = new Vector2(500, 420);
     public readonly Vector3 raycastBias = new Vector2(250, 210);
-    [SerializeField] ButtonUISystem buttonUISystem;
+    [SerializeField] KeyUISystem keyUISystem;
     [SerializeField] DashBoardUISystem dashBoardUISystem;
     [SerializeField] TextManagementSystem textManagementSystem;
     [SerializeField] OverlaySystem overlaySystem;
@@ -76,14 +76,14 @@ public class MainSystem : MonoBehaviour
     {
         if(sendTarget == MainSystemUtil.SendTarget.Chat) sendTarget = MainSystemUtil.SendTarget.Window;
         else sendTarget = MainSystemUtil.SendTarget.Chat;
-        buttonUISystem.ChangeSendButtonText(sendTarget);
+        keyUISystem.ChangeSendButtonText(sendTarget);
     }
 
     public void ChangeInputType()
     {
         textManagementSystem.EnterText();
         inputType = (MainSystemUtil.InputTypes)(((int)inputType + 1) % (Enum.GetNames(typeof(MainSystemUtil.InputTypes)).Length));
-        buttonUISystem.SetButtonVisible(inputType);
+        keyUISystem.SetButtonVisible(inputType);
     }
 
     public void ChangeInputTypeToNumber()
@@ -96,7 +96,7 @@ public class MainSystem : MonoBehaviour
         {
             inputType = (MainSystemUtil.InputTypes)0;
         }
-        buttonUISystem.SetButtonVisible(inputType);
+        keyUISystem.SetButtonVisible(inputType);
     }
 
     public Vector2 GetWindowSize()

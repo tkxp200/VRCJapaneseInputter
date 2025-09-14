@@ -7,7 +7,7 @@ public class TextManagementSystem : MonoBehaviour
     const char WHITE_CHAR = ' ';
     [SerializeField] CandidateSystem candidateSystem;
     [SerializeField] SendMessageSystem sendMessageSystem;
-    [SerializeField] ButtonUISystem buttonUISystem;
+    // [SerializeField] KeyUISystem keyUISystem;
     [SerializeField] TMP_InputField inputField;
     private string transLiteratedText = "";
     private string writingText = "";
@@ -68,13 +68,11 @@ public class TextManagementSystem : MonoBehaviour
         }
         else return;
         ChangeInputFieldText(0);
-        // buttonUISystem.SetTransLiterateButtonVisible();
     }
 
     public void AllDeleteText()
     {
         InitText();
-        // buttonUISystem.SetTransLiterateButtonVisible();
     }
 
     public string GetCurrentText()
@@ -109,7 +107,6 @@ public class TextManagementSystem : MonoBehaviour
     {
         transLiteratedText += writingText;
         writingText = "";
-        // buttonUISystem.SetTransLiterateButtonVisible();
         ChangeInputFieldText(0);
     }
 
@@ -221,9 +218,6 @@ public class TextManagementSystem : MonoBehaviour
             currentTransLiterateIndex = writingText.Length;
             candidateSystem.GenerateCandidate(writingText);
         }
-
-        // if(writingText == "" && transLiteratedText != "") buttonUISystem.SetCopyButtonVisible();
-        // else buttonUISystem.SetEnterButtonVisible();
     }
 
     public void OnClickLeftTransLiterateButton()
