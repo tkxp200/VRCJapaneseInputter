@@ -1,14 +1,16 @@
 using UnityEngine;
 using OverlayInputUtil;
 using TMPro;
+using UnityEngine.UI;
 
 public class TextManagementSystem : MonoBehaviour
 {
     const char WHITE_CHAR = ' ';
     [SerializeField] CandidateSystem candidateSystem;
     [SerializeField] SendMessageSystem sendMessageSystem;
-    // [SerializeField] KeyUISystem keyUISystem;
-    [SerializeField] TMP_InputField inputField;
+    [SerializeField] KeyUISystem keyUISystem;
+    // [SerializeField] TMP_InputField inputField;
+    [SerializeField] TextMeshProUGUI inputField;
     private string transLiteratedText = "";
     private string writingText = "";
     private int currentTransLiterateIndex;
@@ -204,9 +206,11 @@ public class TextManagementSystem : MonoBehaviour
 
         var candidateText = writingText.Substring(0, candidateIndex);
         var remainingText = writingText.Substring(candidateIndex);
+        // inputField.text = $"{transLiteratedText}<u><mark=#00baf340>{candidateText}</mark>{remainingText}</u>";
+        // inputField.MoveTextEnd(false);
+        // inputField.ForceLabelUpdate();
         inputField.text = $"{transLiteratedText}<u><mark=#00baf340>{candidateText}</mark>{remainingText}</u>";
-        inputField.MoveTextEnd(false);
-        inputField.ForceLabelUpdate();
+        keyUISystem.UpdateInputFieldPosition();
         if (candidateIndex != 0)
         {
             // candidateSystem.GenerateCandidate($"{candidateText},");
@@ -244,7 +248,7 @@ public class TextManagementSystem : MonoBehaviour
 
     void Start()
     {
-        inputField.ActivateInputField();
+        // inputField.ActivateInputField();
         InitText();
     }
 }

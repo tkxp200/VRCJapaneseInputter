@@ -1,7 +1,7 @@
 using UnityEngine;
 using SystemUtil;
 using TMPro;
-using Unity.Collections;
+using UnityEngine.UI;
 
 public class KeyUISystem : MonoBehaviour
 {
@@ -16,6 +16,7 @@ public class KeyUISystem : MonoBehaviour
     [SerializeField] GameObject enterButton;
     [SerializeField] GameObject copyButton;
     [SerializeField] TextMeshProUGUI sendButtonText;
+    [SerializeField] RectTransform inputFieldTransform;
 
     public void ChangeSendButtonText(MainSystemUtil.SendTarget sendTarget)
     {
@@ -86,4 +87,13 @@ public class KeyUISystem : MonoBehaviour
         copyButton.SetActive(true);
     }
 
+    public void UpdateInputFieldPosition()
+    {
+        LayoutRebuilder.ForceRebuildLayoutImmediate(inputFieldTransform);
+        var width = inputFieldTransform.rect.width;
+        if (width > MAX_INPUT_FIELD_WIDTH)
+            inputFieldTransform.localPosition = new Vector3(INITIAL_INPUT_FIELD_POSITION_X + MAX_INPUT_FIELD_WIDTH - width, 0, 0);
+        else
+            inputFieldTransform.localPosition = new Vector3(INITIAL_INPUT_FIELD_POSITION_X, 0, 0);
+    }
 }
