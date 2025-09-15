@@ -1,7 +1,6 @@
 using UnityEngine;
 using OverlayInputUtil;
 using TMPro;
-using UnityEngine.UI;
 
 public class TextManagementSystem : MonoBehaviour
 {
