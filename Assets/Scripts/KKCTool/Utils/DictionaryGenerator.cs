@@ -10,6 +10,7 @@ namespace JPInputTool.Utils.DictionaryTools
 
     public static class DictionaryGenerator
     {
+        const string BOS_STR = "</S>";
         const char TAB_CHAR = '\t';
         const char WHITE_CHAR = ' ';
         const char COMMA_CHAR = ',';
@@ -100,7 +101,9 @@ namespace JPInputTool.Utils.DictionaryTools
                 lineSpan = lineSpan.Slice(separateIndex + 1);
 
                 var first = firstSpan.ToString();
-                BiGramEntry entry = new(secondSpan.ToString(), int.Parse(lineSpan));
+                var second = secondSpan.ToString();
+                if(second == BOS_STR) continue;
+                BiGramEntry entry = new(second, int.Parse(lineSpan));
 
                 if (list.TryGetValue(first, out var entries))
                 {

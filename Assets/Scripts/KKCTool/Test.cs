@@ -28,10 +28,10 @@ public class Test : MonoBehaviour
 
     public async Task MainTestAsync()
     {
-        // await GenerateDictionariesAsync();
+        await GenerateDictionariesAsync();
 
-        var converter = await JPConverter.CreateAsync(convFilePath, biGramTriePath, biGramEngTriePath, uniGramTriePath, connectionPath);
-        Debug.Log($"Dictionary Loaded.");
+        // var converter = await JPConverter.CreateAsync(convFilePath, biGramTriePath, biGramEngTriePath, uniGramTriePath, connectionPath);
+        // Debug.Log($"Dictionary Loaded.");
 
         // var results = converter.GetSuggestion(text);
         // Debug.Log($"suggest '{text}':");
@@ -49,9 +49,9 @@ public class Test : MonoBehaviour
         // Debug.Log($"conversion '{text}':");
         // PrintConvResults(results);
 
-        var results = converter.GetCandidates(text, 50);
-        Debug.Log($"candidates '{text}':");
-        PrintCandidates(results);
+        // var results = converter.GetCandidates(text, 50);
+        // Debug.Log($"candidates '{text}':");
+        // PrintCandidates(results);
 
         // var results = converter.GetEnglishSuggestion(text);
         // Debug.Log($"suggest '{text}':");
@@ -61,17 +61,17 @@ public class Test : MonoBehaviour
 
     private async Task GenerateDictionariesAsync()
     {
-        var convTrie = DictionaryGenerator.GenerateConversionDictionary(Path.Combine(Application.dataPath, directlyPath));
-        await DictionaryGenerator.SaveTrie(convTrie, Path.Combine(Application.dataPath, convFilePath));
+        // var convTrie = DictionaryGenerator.GenerateConversionDictionary(Path.Combine(Application.dataPath, directlyPath));
+        // await DictionaryGenerator.SaveTrie(convTrie, Path.Combine(Application.dataPath, convFilePath));
 
         var biGramTrie = DictionaryGenerator.GenerateBiGramDictionary(Path.Combine(Application.dataPath, biGramFilePath));
         await DictionaryGenerator.SaveTrie(biGramTrie, Path.Combine(Application.dataPath, biGramTriePath));
 
-        var engUniGramTrie = DictionaryGenerator.GenerateEnglishUniGramDictionary(Path.Combine(Application.dataPath, uniGramFilePath));
-        await DictionaryGenerator.SaveTrie(engUniGramTrie, Path.Combine(Application.dataPath, uniGramTriePath));
+        // var engUniGramTrie = DictionaryGenerator.GenerateEnglishUniGramDictionary(Path.Combine(Application.dataPath, uniGramFilePath));
+        // await DictionaryGenerator.SaveTrie(engUniGramTrie, Path.Combine(Application.dataPath, uniGramTriePath));
 
-        var engBiGramTrie = DictionaryGenerator.GenerateEnglishBiGramDictionary(Path.Combine(Application.dataPath, biGramEngFilePath));
-        await DictionaryGenerator.SaveTrie(engBiGramTrie, Path.Combine(Application.dataPath, biGramEngTriePath));
+        // var engBiGramTrie = DictionaryGenerator.GenerateEnglishBiGramDictionary(Path.Combine(Application.dataPath, biGramEngFilePath));
+        // await DictionaryGenerator.SaveTrie(engBiGramTrie, Path.Combine(Application.dataPath, biGramEngTriePath));
     }
 
     private void PrintResults(List<ResultPair> results)
