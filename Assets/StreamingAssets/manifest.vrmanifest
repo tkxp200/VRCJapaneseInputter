@@ -1,0 +1,17 @@
+{
+  "source": "builtin",
+  "applications": [
+    {
+      "app_key": "kars.overlay.vrcji",
+      "launch_type": "binary",
+      "is_dashboard_overlay": true,
+      "binary_path_windows": "..\\..\\VRCJI.exe",
+      "strings": {
+        "en_us": {
+          "name": "VRCJI",
+          "description": "VRCJI - Support Japanese Input in VRChat"
+        }
+      }
+    }
+  ]
+}

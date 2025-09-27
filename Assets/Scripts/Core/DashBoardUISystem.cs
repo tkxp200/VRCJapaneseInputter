@@ -14,7 +14,7 @@ public class DashBoardUISystem : MonoBehaviour
     [SerializeField] TextMeshProUGUI dragThresholdText;
     [SerializeField] TextMeshProUGUI sizeText;
     [SerializeField] GameObject joystickActiveGround;
-    [SerializeField] GameObject transLiterateActiveGround;
+    [SerializeField] GameObject autoLaunchActiveGround;
     [SerializeField] GameObject aboutObject;
     private bool isAboutActive = false;
 
@@ -63,9 +63,9 @@ public class DashBoardUISystem : MonoBehaviour
     }
 
 
-    public void ChangeActiveTransLiterate(bool isUseTransLiterate)
+    public void ChangeActiveAutoLaunch(bool isAutoLaunch)
     {
-        transLiterateActiveGround.SetActive(isUseTransLiterate);
+        autoLaunchActiveGround.SetActive(isAutoLaunch);
     }
 
     public void ShowAbout()

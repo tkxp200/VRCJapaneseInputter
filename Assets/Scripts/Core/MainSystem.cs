@@ -5,6 +5,7 @@ using SystemUtil;
 
 public class MainSystem : MonoBehaviour
 {
+    const string APP_KEY = "kars.overlay.vrcji";
     public readonly Vector2 windowSize = new Vector2(500, 420);
     public readonly Vector3 raycastBias = new Vector2(250, 210);
     [SerializeField] KeyUISystem keyUISystem;
@@ -20,16 +21,16 @@ public class MainSystem : MonoBehaviour
     private int overlayDistancex100;
     private int dragThreshold;
     private bool isUseJoystick;
-    private bool isUseTransLiterate;
+    private bool isAutoLaunch;
 
     public float GetOverlaySize()
     {
-        return overlaySizex100/100f;
+        return overlaySizex100 / 100f;
     }
 
     public float GetOverlayDistance()
     {
-        return overlayDistancex100/100f;
+        return overlayDistancex100 / 100f;
     }
 
     public int GetOverlaySizex100()
@@ -52,9 +53,9 @@ public class MainSystem : MonoBehaviour
         return isUseJoystick;
     }
 
-    public bool GetUseTransLiterate()
+    public bool GetAutoLaunch()
     {
-        return isUseTransLiterate;
+        return isAutoLaunch;
     }
 
     public MainSystemUtil.InputTypes GetInputType()
@@ -74,7 +75,7 @@ public class MainSystem : MonoBehaviour
 
     public void ChangeSendTarget()
     {
-        if(sendTarget == MainSystemUtil.SendTarget.Chat) sendTarget = MainSystemUtil.SendTarget.Window;
+        if (sendTarget == MainSystemUtil.SendTarget.Chat) sendTarget = MainSystemUtil.SendTarget.Window;
         else sendTarget = MainSystemUtil.SendTarget.Chat;
         keyUISystem.ChangeSendButtonText(sendTarget);
     }
@@ -88,7 +89,7 @@ public class MainSystem : MonoBehaviour
 
     public void ChangeInputTypeToNumber()
     {
-        if(inputType != MainSystemUtil.InputTypes.Number)
+        if (inputType != MainSystemUtil.InputTypes.Number)
         {
             inputType = MainSystemUtil.InputTypes.Number;
         }
@@ -130,7 +131,7 @@ public class MainSystem : MonoBehaviour
 
     public void IncreaseOverlaySize()
     {
-        if(overlaySizex100 < 100) overlaySizex100++;
+        if (overlaySizex100 < 100) overlaySizex100++;
         dashBoardUISystem.ChangeSizeUI(overlaySizex100);
         overlaySystem.ChangeOverlaySize();
         settingSystem.SaveSetting();
@@ -138,7 +139,7 @@ public class MainSystem : MonoBehaviour
 
     public void DecreaseOverlaySize()
     {
-        if(overlaySizex100 > 10) overlaySizex100--;
+        if (overlaySizex100 > 10) overlaySizex100--;
         dashBoardUISystem.ChangeSizeUI(overlaySizex100);
         overlaySystem.ChangeOverlaySize();
         settingSystem.SaveSetting();
@@ -148,20 +149,20 @@ public class MainSystem : MonoBehaviour
     {
         overlaySizex100 = setOverlaySizex100;
         dashBoardUISystem.ChangeSizeUI(overlaySizex100);
-        if(isReload) overlaySystem.ChangeOverlaySize();
+        if (isReload) overlaySystem.ChangeOverlaySize();
         settingSystem.SaveSetting();
     }
 
     public void IncreaseOverlayDistance()
     {
-        if(overlayDistancex100 < 30) overlayDistancex100++;
+        if (overlayDistancex100 < 30) overlayDistancex100++;
         dashBoardUISystem.ChangeDistanceUI(overlayDistancex100);
         settingSystem.SaveSetting();
     }
 
     public void DecreaseOverlayDistance()
     {
-        if(overlayDistancex100 > -30) overlayDistancex100--;
+        if (overlayDistancex100 > -30) overlayDistancex100--;
         dashBoardUISystem.ChangeDistanceUI(overlayDistancex100);
         settingSystem.SaveSetting();
     }
@@ -175,14 +176,14 @@ public class MainSystem : MonoBehaviour
 
     public void IncreaseDragThreshold()
     {
-        if(dragThreshold < 100) dragThreshold+=5;
+        if (dragThreshold < 100) dragThreshold += 5;
         dashBoardUISystem.ChangeDragThresholdUI(dragThreshold);
         settingSystem.SaveSetting();
     }
 
     public void DecreaseDragThreshold()
     {
-        if(dragThreshold > 20) dragThreshold-=5;
+        if (dragThreshold > 20) dragThreshold -= 5;
         dashBoardUISystem.ChangeDragThresholdUI(dragThreshold);
         settingSystem.SaveSetting();
     }
@@ -208,17 +209,19 @@ public class MainSystem : MonoBehaviour
         settingSystem.SaveSetting();
     }
 
-    public void ChangeUseTransLiterate()
+    public void ChangeAutoLaunch()
     {
-        isUseTransLiterate = !isUseTransLiterate;
-        dashBoardUISystem.ChangeActiveTransLiterate(isUseTransLiterate);
+        isAutoLaunch = !isAutoLaunch;
+        OpenVR.Applications.SetApplicationAutoLaunch(APP_KEY, isAutoLaunch);
+        dashBoardUISystem.ChangeActiveAutoLaunch(isAutoLaunch);
         settingSystem.SaveSetting();
     }
 
-    public void SetUseTransLiterate(bool setUseTransLiterate)
+    public void SetAutoLaunch(bool setAutoLaunch)
     {
-        isUseTransLiterate = setUseTransLiterate;
-        dashBoardUISystem.ChangeActiveTransLiterate(isUseTransLiterate);
+        isAutoLaunch = setAutoLaunch;
+        OpenVR.Applications.SetApplicationAutoLaunch(APP_KEY, isAutoLaunch);
+        dashBoardUISystem.ChangeActiveAutoLaunch(isAutoLaunch);
         settingSystem.SaveSetting();
     }
 }

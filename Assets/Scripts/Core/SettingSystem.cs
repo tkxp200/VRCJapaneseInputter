@@ -2,24 +2,32 @@ using System;
 using UnityEngine;
 using Valve.VR;
 using SystemUtil;
+using System.IO;
 
 public class SettingSystem : MonoBehaviour
 {
+    const string APP_KEY = "kars.overlay.vrcji";
     [SerializeField] MainSystem mainSystem;
-    private string trackHandKey = "TrackHand";
+    const string trackHandKey = "TrackHand";
     private ETrackedControllerRole defaultTrackHand = ETrackedControllerRole.RightHand;
-    private string trackDeviceKey = "TrackDevice";
+    const string trackDeviceKey = "TrackDevice";
     private MainSystemUtil.TrackDevice defaultTrackDevice = MainSystemUtil.TrackDevice.WORLD;
-    private string overlaySizeKey = "OverlaySizex100";
+    const string overlaySizeKey = "OverlaySizex100";
     private int defaultOverlaySizex100 = 30;
-    private string overlayDistanceKey = "OverlayDistancex100";
+    const string overlayDistanceKey = "OverlayDistancex100";
     private int defaultOverlayDistancex100 = 10;
-    private string dragThresholdKey = "DragThreshold";
+    const string dragThresholdKey = "DragThreshold";
     private int defaultDragThreshold = 40;
-    private string isUseJoystickKey = "UseJoystick";
+    const string isUseJoystickKey = "UseJoystick";
     private bool defaultIsUseJoystick = true;
-    private string isUseTransLiterateKey = "UseTransLiterate";
-    private bool defaultIsUseTransLiterate = false;
+    private string isAutoLaunchKey = "AutoLaunch";
+    private bool defaultIsAutoLaunch = false;
+    const string isInitializedKey = "Initialized_v3_0_0";
+
+    static string[] oldKeys = {
+        "OverlaySizex10",
+        "UseTransLiterate"
+    };
 
     void Awake()
     {
@@ -28,13 +36,15 @@ public class SettingSystem : MonoBehaviour
 
     private void SetLoadSettings()
     {
-        ETrackedControllerRole trackHandSetting =  (ETrackedControllerRole)PlayerPrefs.GetInt(trackHandKey, (int)defaultTrackHand);
+        ETrackedControllerRole trackHandSetting = (ETrackedControllerRole)PlayerPrefs.GetInt(trackHandKey, (int)defaultTrackHand);
         MainSystemUtil.TrackDevice trackDeviceSetting = (MainSystemUtil.TrackDevice)PlayerPrefs.GetInt(trackDeviceKey, (int)defaultTrackDevice);
         int overlaySizex10Setting = PlayerPrefs.GetInt(overlaySizeKey, defaultOverlaySizex100);
         int overlayDistancex100Setting = PlayerPrefs.GetInt(overlayDistanceKey, defaultOverlayDistancex100);
         int dragThresholdSetting = PlayerPrefs.GetInt(dragThresholdKey, defaultDragThreshold);
         bool isUseJoystickSetting = Convert.ToBoolean(PlayerPrefs.GetInt(isUseJoystickKey, Convert.ToInt32(defaultIsUseJoystick)));
-        bool isUseTransLiterateSettig = Convert.ToBoolean(PlayerPrefs.GetInt(isUseTransLiterateKey, Convert.ToInt32(defaultIsUseTransLiterate)));
+        // bool isAutoLaunchSetting = Convert.ToBoolean(PlayerPrefs.GetInt(isAutoLaunchKey, Convert.ToInt32(defaultIsAutoLaunch)));
+        var isAutoLaunchSetting = OpenVR.Applications.GetApplicationAutoLaunch(APP_KEY);
+
 
         mainSystem.SetTrackHand(trackHandSetting);
         mainSystem.SetTrackDevice(trackDeviceSetting);
@@ -42,7 +52,7 @@ public class SettingSystem : MonoBehaviour
         mainSystem.SetOverlayDistance(overlayDistancex100Setting);
         mainSystem.SetDragThreshold(dragThresholdSetting);
         mainSystem.SetUseJoystick(isUseJoystickSetting);
-        mainSystem.SetUseTransLiterate(isUseTransLiterateSettig);
+        mainSystem.SetAutoLaunch(isAutoLaunchSetting);
     }
 
     public void SaveSetting()
@@ -53,7 +63,7 @@ public class SettingSystem : MonoBehaviour
         PlayerPrefs.SetInt(overlayDistanceKey, mainSystem.GetOverlayDistancex100());
         PlayerPrefs.SetInt(dragThresholdKey, mainSystem.GetDragThreshold());
         PlayerPrefs.SetInt(isUseJoystickKey, Convert.ToInt32(mainSystem.GetUseJoystick()));
-        PlayerPrefs.SetInt(isUseTransLiterateKey, Convert.ToInt32(mainSystem.GetUseTransLiterate()));
+        PlayerPrefs.SetInt(isAutoLaunchKey, Convert.ToInt32(mainSystem.GetAutoLaunch()));
     }
 
     public void ResetSetting()
@@ -65,6 +75,22 @@ public class SettingSystem : MonoBehaviour
         mainSystem.SetOverlayDistance(defaultOverlayDistancex100);
         mainSystem.SetDragThreshold(defaultDragThreshold);
         mainSystem.SetUseJoystick(defaultIsUseJoystick);
-        mainSystem.SetUseTransLiterate(defaultIsUseTransLiterate);
+        mainSystem.SetAutoLaunch(defaultIsAutoLaunch);
+    }
+
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+    private static void Initialize()
+    {
+        if(PlayerPrefs.GetInt(isInitializedKey) != 1)
+
+        foreach (var key in oldKeys)
+        {
+            if (PlayerPrefs.HasKey(key)) PlayerPrefs.DeleteKey(key);
+        }
+
+        // if(!OpenVR.Applications.IsApplicationInstalled(APP_KEY))
+        //     OpenVR.Applications.AddApplicationManifest(Path.Combine(Application.streamingAssetsPath, @"./manifest.vrmanifest"), false);
+
+        PlayerPrefs.SetInt(isInitializedKey, 1);
     }
 }
