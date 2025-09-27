@@ -19,6 +19,7 @@ public class DashBoardSystem : MonoBehaviour
     private GameObject hoveredButtonObject;
     private GameObject pressedButtonObject;
     private bool isButtonPressed = false;
+    const string TAG = "HoverableButton";
 
     void Start()
     {
@@ -50,9 +51,10 @@ public class DashBoardSystem : MonoBehaviour
                     {
                         var hitPosition = new Vector2(vrEvent.data.mouse.x, renderTexture.height - vrEvent.data.mouse.y);
                         var buttonObject = OverlayUtil.GetButtonObjectByPosition(eventSystem, graphicRaycaster, hitPosition);
+                        if (buttonObject != null && !buttonObject.CompareTag(TAG)) break;
                         if(buttonObject != null) buttonObject.GetComponent<Image>().color = hoveredButtonColor;
                         if(hoveredButtonObject != null && buttonObject != hoveredButtonObject)
-                            hoveredButtonObject.GetComponent<Image>().color = defaultButtonColor;
+                        hoveredButtonObject.GetComponent<Image>().color = defaultButtonColor;
                         hoveredButtonObject = buttonObject;
                     }
                     break;
@@ -67,7 +69,7 @@ public class DashBoardSystem : MonoBehaviour
                         if(buttonObject != null)
                         {
                             pressedButtonObject = buttonObject;
-                            buttonObject.GetComponent<Image>().color = pressedButtonColor;
+                            // buttonObject.GetComponent<Image>().color = pressedButtonColor;
                         }
                     }
                     break;

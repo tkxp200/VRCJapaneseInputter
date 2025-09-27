@@ -228,7 +228,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 283.10022, y: 174.4}
+  m_AnchoredPosition: {x: 283.10022, y: 182.3}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &43420535
@@ -1163,7 +1163,7 @@ GameObject:
   - component: {fileID: 111560188}
   m_Layer: 0
   m_Name: IncreaseButton
-  m_TagString: Untagged
+  m_TagString: HoverableButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1185,7 +1185,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 318, y: 174.4}
+  m_AnchoredPosition: {x: 318, y: 181.1}
   m_SizeDelta: {x: 30, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &111560188
@@ -1231,7 +1231,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 111560189}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 233079408}
+        m_TargetAssemblyTypeName: MainSystem, Assembly-CSharp
+        m_MethodName: IncreaseOverlaySize
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &111560189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1252,8 +1264,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: dd79d5cef79ebd1469508ee41ffc9cd7, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1917,7 +1929,7 @@ GameObject:
   - component: {fileID: 169225460}
   m_Layer: 0
   m_Name: DecreaseButton
-  m_TagString: Untagged
+  m_TagString: HoverableButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1939,7 +1951,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 247.7, y: 174.4}
+  m_AnchoredPosition: {x: 247.7, y: 175.1}
   m_SizeDelta: {x: 30, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &169225460
@@ -1985,7 +1997,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 169225461}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 233079408}
+        m_TargetAssemblyTypeName: MainSystem, Assembly-CSharp
+        m_MethodName: DecreaseOverlayDistance
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &169225461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2006,8 +2030,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: dd79d5cef79ebd1469508ee41ffc9cd7, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3044,7 +3068,7 @@ GameObject:
   - component: {fileID: 208783152}
   m_Layer: 0
   m_Name: DecreaseButton
-  m_TagString: Untagged
+  m_TagString: HoverableButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3066,7 +3090,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 247.7, y: 174.4}
+  m_AnchoredPosition: {x: 247.7, y: 182.1}
   m_SizeDelta: {x: 30, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &208783152
@@ -3112,7 +3136,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 208783153}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 233079408}
+        m_TargetAssemblyTypeName: MainSystem, Assembly-CSharp
+        m_MethodName: DecreaseDragThreshold
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &208783153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3133,8 +3169,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: dd79d5cef79ebd1469508ee41ffc9cd7, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3480,7 +3516,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<b>\u30B9\u30BF\u30FC\u30C8\u30A2\u30C3\u30D7</b>\n<line-height=70%><size=.8em>SteamVR\u8D77\u52D5\u6642\u306BVRCJI\u3092\u8D77\u52D5\u3059\u308B\u969B\u306F\u30AA\u30F3\u306B\u8A2D\u5B9A\u3057\u3066\u304F\u3060\u3055\u3044\u3002"
+  m_text: "<b>\u30B8\u30E7\u30A4\u30B9\u30C6\u30A3\u30C3\u30AF</b>\n<line-height=70%><size=.8em>SteamVR\u8D77\u52D5\u6642\u306BVRCJI\u3092\u8D77\u52D5\u3059\u308B\u969B\u306F\u30AA\u30F3\u306B\u8A2D\u5B9A\u3057\u3066\u304F\u3060\u3055\u3044\u3002"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1dceabcd868825347a4bf85bdc68e002, type: 2}
   m_sharedMaterial: {fileID: -6983458972381495562, guid: 1dceabcd868825347a4bf85bdc68e002, type: 2}
@@ -3515,7 +3551,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -6187,7 +6223,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 283.2, y: 175.29999}
+  m_AnchoredPosition: {x: 283.2, y: 176}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &472340228
@@ -6934,7 +6970,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<b>\u306A\u3093\u304B\u306E\u8A2D\u5B9A</b>\n<line-height=70%><size=.8em>\u306A\u3093\u304B\u306E\u8A2D\u5B9A\u306E\u8AAC\u660E\u6587\u3002"
+  m_text: "<b>CGI</b>\n<line-height=70%><size=.8em>\u306A\u3093\u304B\u306E\u8A2D\u5B9A\u306E\u8AAC\u660E\u6587\u3002"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1dceabcd868825347a4bf85bdc68e002, type: 2}
   m_sharedMaterial: {fileID: -6983458972381495562, guid: 1dceabcd868825347a4bf85bdc68e002, type: 2}
@@ -6969,7 +7005,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -9539,7 +9575,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -10062,6 +10098,7 @@ GameObject:
   - component: {fileID: 785513436}
   - component: {fileID: 785513435}
   - component: {fileID: 785513434}
+  - component: {fileID: 785513437}
   m_Layer: 0
   m_Name: WorldButton
   m_TagString: Untagged
@@ -10171,6 +10208,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 785513432}
   m_CullTransparentMesh: 1
+--- !u!114 &785513437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785513432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f29256c85e0c76d47bac257cce20bb81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetDevice: 0
+  clickEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 233079408}
+        m_TargetAssemblyTypeName: MainSystem, Assembly-CSharp
+        m_MethodName: SetTrackDevice
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &794295185
 GameObject:
   m_ObjectHideFlags: 0
@@ -11876,7 +11941,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -12084,7 +12149,7 @@ GameObject:
   - component: {fileID: 941455735}
   m_Layer: 0
   m_Name: IncreaseButton
-  m_TagString: Untagged
+  m_TagString: HoverableButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12106,7 +12171,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 318, y: 174.4}
+  m_AnchoredPosition: {x: 318, y: 175.1}
   m_SizeDelta: {x: 30, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &941455735
@@ -12152,7 +12217,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 941455736}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 233079408}
+        m_TargetAssemblyTypeName: MainSystem, Assembly-CSharp
+        m_MethodName: IncreaseOverlayDistance
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &941455736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12173,8 +12250,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: dd79d5cef79ebd1469508ee41ffc9cd7, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -12382,7 +12459,7 @@ GameObject:
   - component: {fileID: 1021006782}
   m_Layer: 0
   m_Name: DecreaseButton
-  m_TagString: Untagged
+  m_TagString: HoverableButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12404,7 +12481,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 247.7, y: 174.4}
+  m_AnchoredPosition: {x: 247.7, y: 181.1}
   m_SizeDelta: {x: 30, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1021006782
@@ -12450,7 +12527,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1021006783}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 233079408}
+        m_TargetAssemblyTypeName: MainSystem, Assembly-CSharp
+        m_MethodName: DecreaseOverlaySize
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1021006783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12471,8 +12560,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: dd79d5cef79ebd1469508ee41ffc9cd7, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -14167,9 +14256,9 @@ MonoBehaviour:
   eventSystem: {fileID: 466437131}
   dashBoardUISystem: {fileID: 49519130}
   size: 2.5
-  defaultButtonColor: {r: 0.23137255, g: 0.23137255, b: 0.23921569, a: 1}
-  hoveredButtonColor: {r: 0.3207547, g: 0.3207547, b: 0.3207547, a: 1}
-  pressedButtonColor: {r: 0, g: 0, b: 0, a: 1}
+  defaultButtonColor: {r: 1, g: 1, b: 1, a: 0}
+  hoveredButtonColor: {r: 0.8666667, g: 0.8666667, b: 0.8666667, a: 0.5882353}
+  pressedButtonColor: {r: 1, g: 1, b: 1, a: 0}
 --- !u!1 &1126357677
 GameObject:
   m_ObjectHideFlags: 0
@@ -14415,7 +14504,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 283.10022, y: 174.4}
+  m_AnchoredPosition: {x: 283.10022, y: 176.2}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1143841984
@@ -15011,7 +15100,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 283.2, y: 175.29999}
+  m_AnchoredPosition: {x: 283.2, y: 182}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1184196379
@@ -15263,6 +15352,7 @@ GameObject:
   - component: {fileID: 1214001235}
   - component: {fileID: 1214001234}
   - component: {fileID: 1214001233}
+  - component: {fileID: 1214001236}
   m_Layer: 0
   m_Name: LeftButton
   m_TagString: Untagged
@@ -15372,6 +15462,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1214001231}
   m_CullTransparentMesh: 1
+--- !u!114 &1214001236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214001231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19919d4734eef046a5ac2aa96964fb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetHand: 1
+  clickEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 233079408}
+        m_TargetAssemblyTypeName: MainSystem, Assembly-CSharp
+        m_MethodName: SetTrackHand
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1228144081
 GameObject:
   m_ObjectHideFlags: 0
@@ -15672,7 +15790,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -16234,7 +16352,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 283.2, y: 175.29999}
+  m_AnchoredPosition: {x: 283.2, y: 183}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1301491068
@@ -17940,7 +18058,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1390160321}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 233079408}
+        m_TargetAssemblyTypeName: MainSystem, Assembly-CSharp
+        m_MethodName: ChangeUseJoystick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1390160321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18388,6 +18518,7 @@ GameObject:
   - component: {fileID: 1432096880}
   - component: {fileID: 1432096879}
   - component: {fileID: 1432096878}
+  - component: {fileID: 1432096881}
   m_Layer: 0
   m_Name: HmdButton
   m_TagString: Untagged
@@ -18497,6 +18628,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1432096876}
   m_CullTransparentMesh: 1
+--- !u!114 &1432096881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432096876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f29256c85e0c76d47bac257cce20bb81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetDevice: 1
+  clickEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 233079408}
+        m_TargetAssemblyTypeName: MainSystem, Assembly-CSharp
+        m_MethodName: SetTrackDevice
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1454490578
 GameObject:
   m_ObjectHideFlags: 0
@@ -20649,7 +20808,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -21448,7 +21607,7 @@ GameObject:
   - component: {fileID: 1707492325}
   m_Layer: 0
   m_Name: IncreaseButton
-  m_TagString: Untagged
+  m_TagString: HoverableButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21470,7 +21629,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 318, y: 174.4}
+  m_AnchoredPosition: {x: 318, y: 182.1}
   m_SizeDelta: {x: 30, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1707492325
@@ -21516,7 +21675,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1707492326}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 233079408}
+        m_TargetAssemblyTypeName: MainSystem, Assembly-CSharp
+        m_MethodName: IncreaseDragThreshold
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1707492326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21537,8 +21708,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: dd79d5cef79ebd1469508ee41ffc9cd7, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -23520,7 +23691,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1798333340}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 233079408}
+        m_TargetAssemblyTypeName: MainSystem, Assembly-CSharp
+        m_MethodName: ChangeUseTransLiterate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1798333340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24469,7 +24652,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -27768,7 +27951,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 283.10022, y: 174.4}
+  m_AnchoredPosition: {x: 283.10022, y: 183}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2092408115
@@ -28189,6 +28372,7 @@ GameObject:
   - component: {fileID: 2113283310}
   - component: {fileID: 2113283309}
   - component: {fileID: 2113283308}
+  - component: {fileID: 2113283311}
   m_Layer: 0
   m_Name: RightButton
   m_TagString: Untagged
@@ -28298,6 +28482,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2113283306}
   m_CullTransparentMesh: 1
+--- !u!114 &2113283311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113283306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19919d4734eef046a5ac2aa96964fb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetHand: 2
+  clickEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 233079408}
+        m_TargetAssemblyTypeName: MainSystem, Assembly-CSharp
+        m_MethodName: SetTrackHand
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2123845407
 GameObject:
   m_ObjectHideFlags: 0
