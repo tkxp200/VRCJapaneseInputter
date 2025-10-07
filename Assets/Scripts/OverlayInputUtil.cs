@@ -236,7 +236,7 @@ namespace OverlayInputUtil
             { SmartPhoneKeyType.T, new List<string>       { "タ", "チ", "ツ", "テ", "ト" } },
             { SmartPhoneKeyType.N, new List<string>       { "ナ", "ニ", "ヌ", "ネ", "ノ" } },
             { SmartPhoneKeyType.H, new List<string>       { "ハ", "ヒ", "フ", "ヘ", "ホ" } },
-            { SmartPhoneKeyType.M, new List<string>       { "マ", "ミ", "ム", "ヌ", "モ" } },
+            { SmartPhoneKeyType.M, new List<string>       { "マ", "ミ", "ム", "メ", "モ" } },
             { SmartPhoneKeyType.Y, new List<string>       { "ヤ", "{", "ユ",  "}", "ヨ" } },
             { SmartPhoneKeyType.R, new List<string>       { "ラ", "リ", "ル", "レ", "ロ" } },
             { SmartPhoneKeyType.DAKUTEN, new List<string> { "゛", "小", "[", "゜" } },
