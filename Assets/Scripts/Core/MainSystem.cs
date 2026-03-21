@@ -196,19 +196,19 @@ public class MainSystem : MonoBehaviour
         settingSystem.SaveSetting();
     }
 
-    public void ChangeAutoLaunch()
-    {
-        isAutoLaunch = !isAutoLaunch;
-        OpenVR.Applications.SetApplicationAutoLaunch(APP_KEY, isAutoLaunch);
-        settingUISystem.ChangeActiveAutoLaunch(isAutoLaunch);
-        settingSystem.SaveSetting();
-    }
+    // public void ChangeAutoLaunch()
+    // {
+    //     isAutoLaunch = !isAutoLaunch;
+    //     OpenVR.Applications.SetApplicationAutoLaunch(APP_KEY, isAutoLaunch);
+    //     settingUISystem.ChangeActiveAutoLaunch(isAutoLaunch);
+    //     settingSystem.SaveSetting();
+    // }
 
-    public void SetAutoLaunch(bool setAutoLaunch)
-    {
-        isAutoLaunch = setAutoLaunch;
-        OpenVR.Applications.SetApplicationAutoLaunch(APP_KEY, isAutoLaunch);
-        settingUISystem.ChangeActiveAutoLaunch(isAutoLaunch);
-        settingSystem.SaveSetting();
-    }
+    // public void SetAutoLaunch(bool setAutoLaunch)
+    // {
+    //     isAutoLaunch = setAutoLaunch;
+    //     OpenVR.Applications.SetApplicationAutoLaunch(APP_KEY, isAutoLaunch);
+    //     settingUISystem.ChangeActiveAutoLaunch(isAutoLaunch);
+    //     settingSystem.SaveSetting();
+    // }
 }

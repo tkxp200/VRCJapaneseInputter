@@ -18,14 +18,15 @@ public class SettingSystem : MonoBehaviour
     private int defaultDragThreshold = 40;
     const string isUseJoystickKey = "UseJoystick";
     private bool defaultIsUseJoystick = true;
-    private string isAutoLaunchKey = "AutoLaunch";
-    private bool defaultIsAutoLaunch = false;
+    // private string isAutoLaunchKey = "AutoLaunch";
+    // private bool defaultIsAutoLaunch = false;
     const string isInitializedKey = "Initialized_v3_0_0";
 
     static string[] oldKeys = {
         "OverlaySizex10",
         "UseTransLiterate",
-        "TrackDevice"
+        "TrackDevice",
+        "AutoLaunch"
     };
 
     void Awake()
@@ -49,7 +50,7 @@ public class SettingSystem : MonoBehaviour
         mainSystem.SetOverlayDistance(overlayDistancex100Setting);
         mainSystem.SetDragThreshold(dragThresholdSetting);
         mainSystem.SetUseJoystick(isUseJoystickSetting);
-        mainSystem.SetAutoLaunch(isAutoLaunchSetting);
+        // mainSystem.SetAutoLaunch(isAutoLaunchSetting);
     }
 
     public void SaveSetting()
@@ -59,7 +60,7 @@ public class SettingSystem : MonoBehaviour
         PlayerPrefs.SetInt(overlayDistanceKey, mainSystem.GetOverlayDistancex100());
         PlayerPrefs.SetInt(dragThresholdKey, mainSystem.GetDragThreshold());
         PlayerPrefs.SetInt(isUseJoystickKey, Convert.ToInt32(mainSystem.GetUseJoystick()));
-        PlayerPrefs.SetInt(isAutoLaunchKey, Convert.ToInt32(mainSystem.GetAutoLaunch()));
+        // PlayerPrefs.SetInt(isAutoLaunchKey, Convert.ToInt32(mainSystem.GetAutoLaunch()));
     }
 
     public void ResetSetting()
@@ -70,7 +71,7 @@ public class SettingSystem : MonoBehaviour
         mainSystem.SetOverlayDistance(defaultOverlayDistancex100);
         mainSystem.SetDragThreshold(defaultDragThreshold);
         mainSystem.SetUseJoystick(defaultIsUseJoystick);
-        mainSystem.SetAutoLaunch(defaultIsAutoLaunch);
+        // mainSystem.SetAutoLaunch(defaultIsAutoLaunch);
     }
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]

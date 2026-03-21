@@ -12,7 +12,7 @@ public class SettingUISystem : MonoBehaviour
     [SerializeField] TextMeshProUGUI dragThresholdText;
     [SerializeField] TextMeshProUGUI sizeText;
     [SerializeField] GameObject joystickActiveGround;
-    [SerializeField] GameObject autoLaunchActiveGround;
+    // [SerializeField] GameObject autoLaunchActiveGround;
     // [SerializeField] GameObject aboutObject;
     // private bool isAboutActive = false;
 
@@ -49,10 +49,10 @@ public class SettingUISystem : MonoBehaviour
     }
 
 
-    public void ChangeActiveAutoLaunch(bool isAutoLaunch)
-    {
-        autoLaunchActiveGround.SetActive(isAutoLaunch);
-    }
+    // public void ChangeActiveAutoLaunch(bool isAutoLaunch)
+    // {
+    //     autoLaunchActiveGround.SetActive(isAutoLaunch);
+    // }
 
     // public void ShowAbout()
     // {
