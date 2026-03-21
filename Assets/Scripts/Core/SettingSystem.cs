@@ -81,7 +81,7 @@ public class SettingSystem : MonoBehaviour
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     private static void Initialize()
     {
-        if(PlayerPrefs.GetInt(isInitializedKey) != 1)
+        if(PlayerPrefs.GetInt(isInitializedKey) == 1) return;
 
         foreach (var key in oldKeys)
         {
