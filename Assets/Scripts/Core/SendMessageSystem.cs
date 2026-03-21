@@ -20,11 +20,11 @@ public class SendMessageSystem : MonoBehaviour
             {
                 if (isChat)
                 {
-                    client.Send("/chatbox/input", textManegamentSystem.GetTransLiteratedText(), true);
+                    client.Send("/chatbox/input", textManegamentSystem.GetTransLiteratedText(), true, false);
                 }
                 else
                 {
-                    client.Send("/chatbox/input", textManegamentSystem.GetCurrentText(), true);
+                    client.Send("/chatbox/input", textManegamentSystem.GetCurrentText(), true, true);
                     textManegamentSystem.InitText();
                 }
             }
