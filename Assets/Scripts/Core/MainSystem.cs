@@ -9,7 +9,7 @@ public class MainSystem : MonoBehaviour
     public static Vector2 windowSize = new Vector2(500, 460);
     public static Vector3 raycastBias = windowSize / 2;
     [SerializeField] KeyUISystem keyUISystem;
-    [SerializeField] DashBoardUISystem dashBoardUISystem;
+    [SerializeField] SettingUISystem settingUISystem;
     [SerializeField] TextManagementSystem textManagementSystem;
     [SerializeField] OverlaySystem overlaySystem;
     [SerializeField] SettingSystem settingSystem;
@@ -112,14 +112,14 @@ public class MainSystem : MonoBehaviour
     public void SetTrackHand(ETrackedControllerRole setTrackHand)
     {
         trackHand = setTrackHand;
-        dashBoardUISystem.ChangeTrackHandUI(trackHand);
+        settingUISystem.ChangeTrackHandUI(trackHand);
         settingSystem.SaveSetting();
     }
 
     public void IncreaseOverlaySize()
     {
         if (overlaySizex100 < 100) overlaySizex100++;
-        dashBoardUISystem.ChangeSizeUI(overlaySizex100);
+        settingUISystem.ChangeSizeUI(overlaySizex100);
         overlaySystem.ChangeOverlaySize();
         settingSystem.SaveSetting();
     }
@@ -127,7 +127,7 @@ public class MainSystem : MonoBehaviour
     public void DecreaseOverlaySize()
     {
         if (overlaySizex100 > 10) overlaySizex100--;
-        dashBoardUISystem.ChangeSizeUI(overlaySizex100);
+        settingUISystem.ChangeSizeUI(overlaySizex100);
         overlaySystem.ChangeOverlaySize();
         settingSystem.SaveSetting();
     }
@@ -135,7 +135,7 @@ public class MainSystem : MonoBehaviour
     public void SetOverlaySize(int setOverlaySizex100, bool isReload)
     {
         overlaySizex100 = setOverlaySizex100;
-        dashBoardUISystem.ChangeSizeUI(overlaySizex100);
+        settingUISystem.ChangeSizeUI(overlaySizex100);
         if (isReload) overlaySystem.ChangeOverlaySize();
         settingSystem.SaveSetting();
     }
@@ -143,56 +143,56 @@ public class MainSystem : MonoBehaviour
     public void IncreaseOverlayDistance()
     {
         if (overlayDistancex100 < 30) overlayDistancex100++;
-        dashBoardUISystem.ChangeDistanceUI(overlayDistancex100);
+        settingUISystem.ChangeDistanceUI(overlayDistancex100);
         settingSystem.SaveSetting();
     }
 
     public void DecreaseOverlayDistance()
     {
         if (overlayDistancex100 > -30) overlayDistancex100--;
-        dashBoardUISystem.ChangeDistanceUI(overlayDistancex100);
+        settingUISystem.ChangeDistanceUI(overlayDistancex100);
         settingSystem.SaveSetting();
     }
 
     public void SetOverlayDistance(int setOverlayDistancex100)
     {
         overlayDistancex100 = setOverlayDistancex100;
-        dashBoardUISystem.ChangeDistanceUI(overlayDistancex100);
+        settingUISystem.ChangeDistanceUI(overlayDistancex100);
         settingSystem.SaveSetting();
     }
 
     public void IncreaseDragThreshold()
     {
         if (dragThreshold < 100) dragThreshold += 5;
-        dashBoardUISystem.ChangeDragThresholdUI(dragThreshold);
+        settingUISystem.ChangeDragThresholdUI(dragThreshold);
         settingSystem.SaveSetting();
     }
 
     public void DecreaseDragThreshold()
     {
         if (dragThreshold > 20) dragThreshold -= 5;
-        dashBoardUISystem.ChangeDragThresholdUI(dragThreshold);
+        settingUISystem.ChangeDragThresholdUI(dragThreshold);
         settingSystem.SaveSetting();
     }
 
     public void SetDragThreshold(int setThreshold)
     {
         dragThreshold = setThreshold;
-        dashBoardUISystem.ChangeDragThresholdUI(dragThreshold);
+        settingUISystem.ChangeDragThresholdUI(dragThreshold);
         settingSystem.SaveSetting();
     }
 
     public void ChangeUseJoystick()
     {
         isUseJoystick = !isUseJoystick;
-        dashBoardUISystem.ChangeActiveJoystick(isUseJoystick);
+        settingUISystem.ChangeActiveJoystick(isUseJoystick);
         settingSystem.SaveSetting();
     }
 
     public void SetUseJoystick(bool setUseJoystick)
     {
         isUseJoystick = setUseJoystick;
-        dashBoardUISystem.ChangeActiveJoystick(isUseJoystick);
+        settingUISystem.ChangeActiveJoystick(isUseJoystick);
         settingSystem.SaveSetting();
     }
 
@@ -200,7 +200,7 @@ public class MainSystem : MonoBehaviour
     {
         isAutoLaunch = !isAutoLaunch;
         OpenVR.Applications.SetApplicationAutoLaunch(APP_KEY, isAutoLaunch);
-        dashBoardUISystem.ChangeActiveAutoLaunch(isAutoLaunch);
+        settingUISystem.ChangeActiveAutoLaunch(isAutoLaunch);
         settingSystem.SaveSetting();
     }
 
@@ -208,7 +208,7 @@ public class MainSystem : MonoBehaviour
     {
         isAutoLaunch = setAutoLaunch;
         OpenVR.Applications.SetApplicationAutoLaunch(APP_KEY, isAutoLaunch);
-        dashBoardUISystem.ChangeActiveAutoLaunch(isAutoLaunch);
+        settingUISystem.ChangeActiveAutoLaunch(isAutoLaunch);
         settingSystem.SaveSetting();
     }
 }
