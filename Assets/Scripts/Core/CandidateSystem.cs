@@ -16,6 +16,11 @@ public class CandidateSystem : MonoBehaviour
     static string bigramTriePath = Path.Combine(Application.dataPath, @"dic/bigram_jp.lptrie");
     static string bigramEngTriePath = Path.Combine(Application.dataPath, @"dic/bigram_eng.lptrie");
     static string unigramTriePath = Path.Combine(Application.dataPath, @"dic/unigram_eng.lptrie");
+    private const int characterXSize = 22;
+    private const int buttonInSet = 40;
+    private const int defaultButtonHeight = 50;
+    private const int dragThreshold = 10;
+    private const string candidateTag = "Candidate";
     [SerializeField] MainSystem mainSystem;
     [SerializeField] ActionSystem actionSystem;
     [SerializeField] TextManagementSystem textManagementSystem;
@@ -25,15 +30,10 @@ public class CandidateSystem : MonoBehaviour
     private JPConverter converter;
     private bool isConverterLoaded = false;
     private List<GameObject> candidateObjects = new List<GameObject>();
-    private int characterXSize = 22;
-    private int buttonInSet = 40;
-    private int defaultButtonHeight = 50;
     private bool isTriggerPressed = false;
     private Vector2 currentHitPosition;
     private Vector2 triggerPressedHitPosition;
     private Vector2 defaultCandidateParentPosition;
-    private int dragThreshold = 10;
-    private const string candidateTag = "Candidate";
     private int buttonPositionX;
 
     async void Awake()
