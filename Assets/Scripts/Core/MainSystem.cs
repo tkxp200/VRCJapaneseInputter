@@ -6,8 +6,8 @@ using SystemUtil;
 public class MainSystem : MonoBehaviour
 {
     const string APP_KEY = "kars.overlay.vrcji";
-    public readonly Vector2 windowSize = new Vector2(500, 420);
-    public readonly Vector3 raycastBias = new Vector2(250, 210);
+    public static Vector2 windowSize = new Vector2(500, 460);
+    public static Vector3 raycastBias = windowSize / 2;
     [SerializeField] KeyUISystem keyUISystem;
     [SerializeField] DashBoardUISystem dashBoardUISystem;
     [SerializeField] TextManagementSystem textManagementSystem;
