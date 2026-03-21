@@ -15,7 +15,7 @@ public class MainSystem : MonoBehaviour
     [SerializeField] SettingSystem settingSystem;
     public ETrackedControllerRole trackHand = ETrackedControllerRole.RightHand;
     private MainSystemUtil.InputTypes inputType = MainSystemUtil.InputTypes.Hiragana;
-    private MainSystemUtil.TrackDevice trackDevice = MainSystemUtil.TrackDevice.WORLD;
+    // private MainSystemUtil.TrackDevice trackDevice = MainSystemUtil.TrackDevice.WORLD;
     private MainSystemUtil.SendTarget sendTarget = MainSystemUtil.SendTarget.Chat;
     private int overlaySizex100;
     private int overlayDistancex100;
@@ -68,10 +68,10 @@ public class MainSystem : MonoBehaviour
         return sendTarget;
     }
 
-    public MainSystemUtil.TrackDevice GetTrackDevice()
-    {
-        return trackDevice;
-    }
+    // public MainSystemUtil.TrackDevice GetTrackDevice()
+    // {
+    //     return trackDevice;
+    // }
 
     public void ChangeSendTarget()
     {
@@ -122,12 +122,12 @@ public class MainSystem : MonoBehaviour
         settingSystem.SaveSetting();
     }
 
-    public void SetTrackDevice(MainSystemUtil.TrackDevice setTrackDevice)
-    {
-        trackDevice = setTrackDevice;
-        dashBoardUISystem.ChangeTrackDeviceUI(trackDevice);
-        settingSystem.SaveSetting();
-    }
+    // public void SetTrackDevice(MainSystemUtil.TrackDevice setTrackDevice)
+    // {
+    //     trackDevice = setTrackDevice;
+    //     dashBoardUISystem.ChangeTrackDeviceUI(trackDevice);
+    //     settingSystem.SaveSetting();
+    // }
 
     public void IncreaseOverlaySize()
     {

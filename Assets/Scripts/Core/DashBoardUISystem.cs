@@ -8,8 +8,8 @@ public class DashBoardUISystem : MonoBehaviour
 {
     [SerializeField] List<GameObject> trackHandOptions;
     [SerializeField] GameObject trackHandActiveGround;
-    [SerializeField] List<GameObject> trackDeviceOptions;
-    [SerializeField] GameObject trackDeviceActiveGround;
+    // [SerializeField] List<GameObject> trackDeviceOptions;
+    // [SerializeField] GameObject trackDeviceActiveGround;
     [SerializeField] TextMeshProUGUI distanceText;
     [SerializeField] TextMeshProUGUI dragThresholdText;
     [SerializeField] TextMeshProUGUI sizeText;
@@ -30,17 +30,17 @@ public class DashBoardUISystem : MonoBehaviour
         }
     }
 
-    public void ChangeTrackDeviceUI(MainSystemUtil.TrackDevice trackDevice)
-    {
-        if(trackDevice == MainSystemUtil.TrackDevice.WORLD)
-        {
-            trackDeviceActiveGround.transform.localPosition = trackDeviceOptions[0].transform.localPosition;
-        }
-        if(trackDevice == MainSystemUtil.TrackDevice.HMD)
-        {
-            trackDeviceActiveGround.transform.localPosition = trackDeviceOptions[1].transform.localPosition;
-        }
-    }
+    // public void ChangeTrackDeviceUI(MainSystemUtil.TrackDevice trackDevice)
+    // {
+    //     if(trackDevice == MainSystemUtil.TrackDevice.WORLD)
+    //     {
+    //         trackDeviceActiveGround.transform.localPosition = trackDeviceOptions[0].transform.localPosition;
+    //     }
+    //     if(trackDevice == MainSystemUtil.TrackDevice.HMD)
+    //     {
+    //         trackDeviceActiveGround.transform.localPosition = trackDeviceOptions[1].transform.localPosition;
+    //     }
+    // }
 
     public void ChangeDistanceUI(int distanceValue)
     {

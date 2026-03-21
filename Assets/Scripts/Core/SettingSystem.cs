@@ -10,8 +10,8 @@ public class SettingSystem : MonoBehaviour
     [SerializeField] MainSystem mainSystem;
     const string trackHandKey = "TrackHand";
     private ETrackedControllerRole defaultTrackHand = ETrackedControllerRole.RightHand;
-    const string trackDeviceKey = "TrackDevice";
-    private MainSystemUtil.TrackDevice defaultTrackDevice = MainSystemUtil.TrackDevice.WORLD;
+    // const string trackDeviceKey = "TrackDevice";
+    // private MainSystemUtil.TrackDevice defaultTrackDevice = MainSystemUtil.TrackDevice.WORLD;
     const string overlaySizeKey = "OverlaySizex100";
     private int defaultOverlaySizex100 = 30;
     const string overlayDistanceKey = "OverlayDistancex100";
@@ -26,7 +26,8 @@ public class SettingSystem : MonoBehaviour
 
     static string[] oldKeys = {
         "OverlaySizex10",
-        "UseTransLiterate"
+        "UseTransLiterate",
+        "TrackDevice"
     };
 
     void Awake()
@@ -37,7 +38,7 @@ public class SettingSystem : MonoBehaviour
     private void SetLoadSettings()
     {
         ETrackedControllerRole trackHandSetting = (ETrackedControllerRole)PlayerPrefs.GetInt(trackHandKey, (int)defaultTrackHand);
-        MainSystemUtil.TrackDevice trackDeviceSetting = (MainSystemUtil.TrackDevice)PlayerPrefs.GetInt(trackDeviceKey, (int)defaultTrackDevice);
+        // MainSystemUtil.TrackDevice trackDeviceSetting = (MainSystemUtil.TrackDevice)PlayerPrefs.GetInt(trackDeviceKey, (int)defaultTrackDevice);
         int overlaySizex10Setting = PlayerPrefs.GetInt(overlaySizeKey, defaultOverlaySizex100);
         int overlayDistancex100Setting = PlayerPrefs.GetInt(overlayDistanceKey, defaultOverlayDistancex100);
         int dragThresholdSetting = PlayerPrefs.GetInt(dragThresholdKey, defaultDragThreshold);
@@ -47,7 +48,7 @@ public class SettingSystem : MonoBehaviour
 
 
         mainSystem.SetTrackHand(trackHandSetting);
-        mainSystem.SetTrackDevice(trackDeviceSetting);
+        // mainSystem.SetTrackDevice(trackDeviceSetting);
         mainSystem.SetOverlaySize(overlaySizex10Setting, false);
         mainSystem.SetOverlayDistance(overlayDistancex100Setting);
         mainSystem.SetDragThreshold(dragThresholdSetting);
@@ -58,7 +59,7 @@ public class SettingSystem : MonoBehaviour
     public void SaveSetting()
     {
         PlayerPrefs.SetInt(trackHandKey, (int)mainSystem.GetTrackHand());
-        PlayerPrefs.SetInt(trackDeviceKey, (int)mainSystem.GetTrackDevice());
+        // PlayerPrefs.SetInt(trackDeviceKey, (int)mainSystem.GetTrackDevice());
         PlayerPrefs.SetInt(overlaySizeKey, mainSystem.GetOverlaySizex100());
         PlayerPrefs.SetInt(overlayDistanceKey, mainSystem.GetOverlayDistancex100());
         PlayerPrefs.SetInt(dragThresholdKey, mainSystem.GetDragThreshold());
@@ -70,7 +71,7 @@ public class SettingSystem : MonoBehaviour
     {
         PlayerPrefs.DeleteAll();
         mainSystem.SetTrackHand(defaultTrackHand);
-        mainSystem.SetTrackDevice(defaultTrackDevice);
+        // mainSystem.SetTrackDevice(defaultTrackDevice);
         mainSystem.SetOverlaySize(defaultOverlaySizex100, true);
         mainSystem.SetOverlayDistance(defaultOverlayDistancex100);
         mainSystem.SetDragThreshold(defaultDragThreshold);
