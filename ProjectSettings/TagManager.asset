@@ -6,6 +6,7 @@ TagManager:
   tags:
   - SmartPhoneButton
   - Candidate
+  - HoverableButton
   layers:
   - Default
   - TransparentFX
