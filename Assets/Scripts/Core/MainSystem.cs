@@ -83,7 +83,7 @@ public class MainSystem : MonoBehaviour
     public void ChangeInputType()
     {
         textManagementSystem.EnterText();
-        inputType = (MainSystemUtil.InputTypes)(((int)inputType + 1) % (Enum.GetNames(typeof(MainSystemUtil.InputTypes)).Length));
+        inputType = (MainSystemUtil.InputTypes)(((int)inputType + 1) % Enum.GetNames(typeof(MainSystemUtil.InputTypes)).Length);
         keyUISystem.SetButtonVisible(inputType);
     }
 

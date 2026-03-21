@@ -12,7 +12,7 @@ public class KeyUISystem : MonoBehaviour
     // [SerializeField] GameObject katakanaButtonParent;
     [SerializeField] GameObject alphabetButtonParent;
     [SerializeField] GameObject cursorButtonParent;
-    [SerializeField] GameObject transLiterateButtonParent;
+    // [SerializeField] GameObject transLiterateButtonParent;
     [SerializeField] GameObject enterButton;
     [SerializeField] GameObject copyButton;
     [SerializeField] TextMeshProUGUI sendButtonText;
@@ -65,14 +65,14 @@ public class KeyUISystem : MonoBehaviour
 
     public void SetCursorButtonVisible()
     {
-        transLiterateButtonParent.SetActive(false);
+        // transLiterateButtonParent.SetActive(false);
         cursorButtonParent.SetActive(true);
     }
 
     public void SetTransLiterateButtonVisible()
     {
         cursorButtonParent.SetActive(false);
-        transLiterateButtonParent.SetActive(true);
+        // transLiterateButtonParent.SetActive(true);
     }
 
     public void SetEnterButtonVisible()
