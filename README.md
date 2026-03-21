@@ -31,5 +31,5 @@ VRCJI(VRCJapaneseInputter)はVRChatで日本語入力をサポートするアプ
 バグや不具合等ございましたらIssueを立ててもらうか、[Forms(後で作る)]又はboothのメッセージにてお願いいたします。
 返信が必要な場合はFormsではなくBoothメッセージにお願いいたします。
 
-VRCJI v3.0.0からUnity6000.0.57f1に移行しました。
+VRCJI v3.0.0からUnity6000.3.11f1に移行しました。
 コード汚いけどゆるして...
