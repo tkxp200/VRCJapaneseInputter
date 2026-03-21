@@ -52,7 +52,17 @@ public class OverlaySystem : MonoBehaviour
         direction.Normalize();
         if (mainSystem.GetTrackDevice() == MainSystemUtil.TrackDevice.HMD)
             rotation = Quaternion.LookRotation(direction, hmdTransform.rot * Vector3.up);
-        else rotation = Quaternion.LookRotation(forward, Vector3.up);
+        else
+        {
+            // forwardとVector3.upの平行度をチェック
+            float dotProduct = Vector3.Dot(forward.normalized, Vector3.up);
+            Vector3 upVector = Vector3.up;
+            if (Mathf.Abs(dotProduct) > 0.8f)
+            {
+                upVector = controllerTransform.rot * Vector3.up;
+            }
+            rotation = Quaternion.LookRotation(forward, upVector);
+        }
         OverlayUtil.SetTransformAbsolute(overlayHandle, overlayPosition, rotation);
         ReloadOverlay();
     }
