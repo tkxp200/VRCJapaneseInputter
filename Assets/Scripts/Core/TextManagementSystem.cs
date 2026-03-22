@@ -200,14 +200,11 @@ public class TextManagementSystem : MonoBehaviour
     private void ChangeInputFieldText(int candidateIndex)
     {
         bool isNotTextEmpty = writingText != "" || transLiteratedText != "";
-        sendMessageSystem.SendChatTyping(isNotTextEmpty);
-        if (isNotTextEmpty) sendMessageSystem.SendMessage(true);
+        // sendMessageSystem.SendChatTyping(isNotTextEmpty);
+        // if (isNotTextEmpty) sendMessageSystem.SendMessage(true);
 
         var candidateText = writingText.Substring(0, candidateIndex);
         var remainingText = writingText.Substring(candidateIndex);
-        // inputField.text = $"{transLiteratedText}<u><mark=#00baf340>{candidateText}</mark>{remainingText}</u>";
-        // inputField.MoveTextEnd(false);
-        // inputField.ForceLabelUpdate();
         inputField.text = $"{transLiteratedText}<u><mark=#00baf340>{candidateText}</mark>{remainingText}</u>";
         keyUISystem.UpdateInputFieldPosition();
         if (candidateIndex != 0)
