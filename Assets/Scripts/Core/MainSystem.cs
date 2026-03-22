@@ -15,6 +15,7 @@ public class MainSystem : MonoBehaviour
     [SerializeField] SettingSystem settingSystem;
     public ETrackedControllerRole trackHand = ETrackedControllerRole.RightHand;
     private MainSystemUtil.InputTypes inputType = MainSystemUtil.InputTypes.Hiragana;
+    private MainSystemUtil.Panel currentPanel = MainSystemUtil.Panel.KEYBOARD;
     private MainSystemUtil.SendTarget sendTarget = MainSystemUtil.SendTarget.Chat;
     private int overlaySizex100;
     private int overlayDistancex100;
@@ -92,6 +93,16 @@ public class MainSystem : MonoBehaviour
             inputType = (MainSystemUtil.InputTypes)0;
         }
         keyUISystem.SetButtonVisible(inputType);
+    }
+
+    public void SetCurrentPanel(MainSystemUtil.Panel setPanel)
+    {
+        currentPanel = setPanel;
+    }
+
+    public MainSystemUtil.Panel GetCurrentPanel()
+    {
+        return currentPanel;
     }
 
     public Vector2 GetWindowSize()

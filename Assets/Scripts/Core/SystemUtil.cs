@@ -23,5 +23,11 @@ namespace SystemUtil
             WORLD,
             HMD
         };
+
+        public enum Panel
+        {
+            KEYBOARD,
+            SETTING
+        }
     }
 }

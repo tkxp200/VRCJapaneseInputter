@@ -29,6 +29,7 @@ public class SmartPhoneInputSystem : MonoBehaviour
 
     void HitPositionMove(Vector2? hitPosition)
     {
+        if(mainSystem.GetCurrentPanel() != MainSystemUtil.Panel.KEYBOARD) return;
         if(isMainButtonPressed)
         {
             if(hitPosition != null)
@@ -65,12 +66,14 @@ public class SmartPhoneInputSystem : MonoBehaviour
 
     void TriggerDown(Vector2 hitPosition, GameObject buttonObject)
     {
+        if(mainSystem.GetCurrentPanel() != MainSystemUtil.Panel.KEYBOARD) return;
         triggerDownPosition = hitPosition;
         if(buttonObject != null && buttonObject.CompareTag(smartPhoneTag)) buttonObject.GetComponent<Button>().onClick.Invoke();
     }
 
     void TriggerUp(Vector2 hitPosition, GameObject buttonObject)
     {
+        if(mainSystem.GetCurrentPanel() != MainSystemUtil.Panel.KEYBOARD) return;
         if(isMainButtonPressed)
         {
             isMainButtonPressed = false;

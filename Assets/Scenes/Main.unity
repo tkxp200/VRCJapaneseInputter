@@ -5066,6 +5066,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8ffd227234de3640adf81e7a038fe0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainUISystem
+  mainSystem: {fileID: 233079408}
   keyboard: {fileID: 181425855}
   settings: {fileID: 864529593}
 --- !u!4 &281080986
@@ -22795,6 +22796,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43d1cb7bb707d0940b64766acd31af9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SettingPanelSystem
+  mainSystem: {fileID: 233079408}
   settingUISystem: {fileID: 1586597516}
   actionSystem: {fileID: 1070298128}
   graphicRaycaster: {fileID: 546452888}

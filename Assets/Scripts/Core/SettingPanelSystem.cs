@@ -2,10 +2,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using Valve.VR;
+using SystemUtil;
 using OverlayVRUtil;
 
 public class SettingPanelSystem : MonoBehaviour
 {
+    [SerializeField] MainSystem mainSystem;
     [SerializeField] SettingUISystem settingUISystem;
     [SerializeField] ActionSystem actionSystem;
     [SerializeField] GraphicRaycaster graphicRaycaster;
@@ -28,6 +30,7 @@ public class SettingPanelSystem : MonoBehaviour
 
     void HitPositionMove(Vector2? hitPosition)
     {
+        if(mainSystem.GetCurrentPanel() != MainSystemUtil.Panel.SETTING) return;
         if(hitPosition is not null && !isButtonPressed)
         {
             var buttonObject = OverlayUtil.GetButtonObjectByPosition(eventSystem, graphicRaycaster, (Vector2)hitPosition);
@@ -46,6 +49,7 @@ public class SettingPanelSystem : MonoBehaviour
 
     void TriggerDown(Vector2 hitPosition, GameObject buttonObject)
     {
+        if(mainSystem.GetCurrentPanel() != MainSystemUtil.Panel.SETTING) return;
         // if(!isButtonPressed && !settingUISystem.GetAboutVisible())
         if(!isButtonPressed)
         {
@@ -60,6 +64,7 @@ public class SettingPanelSystem : MonoBehaviour
 
     void TriggerUp(Vector2 hitPosition, GameObject buttonObject)
     {
+        if(mainSystem.GetCurrentPanel() != MainSystemUtil.Panel.SETTING) return;
         // if(isButtonPressed && !dashBoardUISystem.GetAboutVisible())
         if(isButtonPressed)
         {
